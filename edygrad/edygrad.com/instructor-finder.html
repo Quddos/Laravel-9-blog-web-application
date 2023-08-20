@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from edygrad.com/instructor-finder by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2023 05:16:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+<!-- CSRF Token -->
+<meta name="csrf-token" content="aXa5IfOq9rYhvVexK4jw0FfbM2rVWEZEvxBH6z18">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name='robots' content="index, follow, all">
+
+    <meta name="description" content="Instructor finder description">
+    <meta property="og:description" content="Instructor finder description">
+    <meta name='twitter:description' content='Instructor finder description'>
+
+<link rel='shortcut icon' type='image/x-icon' href="store/1/favicon2.html">
+<link rel="manifest" href="mix-manifest7b30.json?v=4">
+<meta name="theme-color" content="#FFF">
+<!-- Windows Phone -->
+<meta name="msapplication-starturl" content="/">
+<meta name="msapplication-TileColor" content="#FFF">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.html">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-title" content="EDYGRAD">
+<link rel="apple-touch-icon" href="store/1/favicon2.html">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<!-- Android -->
+<link rel='icon' href='store/1/favicon2.html'>
+<meta name="application-name" content="EDYGRAD">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Other -->
+<meta name="layoutmode" content="fitscreen/standard">
+<link rel="home" href="index.html">
+
+<!-- Open Graph -->
+<meta property='og:title' content='Instructor finder'>
+<meta name='twitter:card' content='summary'>
+<meta name='twitter:title' content='Instructor finder'>
+
+<meta property='og:site_name' content='EDYGRAD.html'>
+<meta property='og:image' content='store/1/favicon2.html'>
+<meta name='twitter:image' content='store/1/favicon2.html'>
+<meta property='og:locale' content='en_US.html'>
+<meta property='og:type' content='website'>
+
+
+
+    <title>Instructor finder | EDYGRAD</title>
+
+    <!-- General CSS File -->
+    <link rel="stylesheet" href="assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="assets/default/vendors/toast/jquery.toast.min.css">
+    <link rel="stylesheet" href="assets/default/vendors/simplebar/simplebar.css">
+    <link rel="stylesheet" href="assets/default/css/app.css">
+
+    
+        <link rel="stylesheet" href="assets/default/vendors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendors/leaflet/leaflet.css">
+    <link rel="stylesheet" href="assets/vendors/leaflet/leaflet.markercluster/markerCluster.css">
+    <link rel="stylesheet" href="assets/vendors/leaflet/leaflet.markercluster/markerCluster.Default.css">
+    <link rel="stylesheet" href="assets/vendors/wrunner-html-range-slider-with-2-handles/css/wrunner-default-theme.css">
+    
+    <style>
+        
+
+        @font-face {
+                      font-family: 'main-font-family';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-display: swap;
+                      src: url(store/1/fonts/montserrat-regular.woff2) format('woff2');
+                    }@font-face {
+                      font-family: 'main-font-family';
+                      font-style: normal;
+                      font-weight: bold;
+                      font-display: swap;
+                      src: url(store/1/fonts/montserrat-bold.woff2) format('woff2');
+                    }@font-face {
+                      font-family: 'main-font-family';
+                      font-style: normal;
+                      font-weight: 500;
+                      font-display: swap;
+                      src: url(store/1/fonts/montserrat-medium.woff2) format('woff2');
+                    }@font-face {
+                      font-family: 'rtl-font-family';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-display: swap;
+                      src: url(store/1/fonts/Vazir-Regular.woff2) format('woff2');
+                    }@font-face {
+                      font-family: 'rtl-font-family';
+                      font-style: normal;
+                      font-weight: bold;
+                      font-display: swap;
+                      src: url(store/1/fonts/Vazir-Bold.woff2) format('woff2');
+                    }@font-face {
+                      font-family: 'rtl-font-family';
+                      font-style: normal;
+                      font-weight: 500;
+                      font-display: swap;
+                      src: url(store/1/fonts/Vazir-Medium.woff2) format('woff2');
+                    }
+
+        :root{
+--primary:#00539c;
+--primary-border:#eea47f;
+--primary-btn-shadow:box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+--primary-btn-shadow-hover:box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+--secondary-btn-shadow:box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+--secondary-btn-shadow-hover:box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+--secondary-btn-color-hover:#000000;
+}
+
+    </style>
+
+
+            <style>
+    .pace { -webkit-pointer-events: none; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; } .pace-inactive { display: none; } .pace .pace-progress { background: #29d; position: fixed; z-index: 2000; top: 0; right: 100%; width: 100%; height: 2px; } .pace .pace-progress-inner { display: block; position: absolute; right: 0px; width: 100px; height: 100%; box-shadow: 0 0 10px #29d, 0 0 5px #29d; opacity: 1.0; -webkit-transform: rotate(3deg) translate(0px, -4px); -moz-transform: rotate(3deg) translate(0px, -4px); -ms-transform: rotate(3deg) translate(0px, -4px); -o-transform: rotate(3deg) translate(0px, -4px); transform: rotate(3deg) translate(0px, -4px); } .pace .pace-activity { display: block; position: fixed; z-index: 2000; top: 15px; right: 15px; width: 14px; height: 14px; border: solid 2px transparent; border-top-color: #29d; border-left-color: #29d; border-radius: 10px; -webkit-animation: pace-spinner 400ms linear infinite; -moz-animation: pace-spinner 400ms linear infinite; -ms-animation: pace-spinner 400ms linear infinite; -o-animation: pace-spinner 400ms linear infinite; animation: pace-spinner 400ms linear infinite; } @-webkit-keyframes pace-spinner { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } } @-moz-keyframes pace-spinner { 0% { -moz-transform: rotate(0deg); transform: rotate(0deg); } 100% { -moz-transform: rotate(360deg); transform: rotate(360deg); } } @-o-keyframes pace-spinner { 0% { -o-transform: rotate(0deg); transform: rotate(0deg); } 100% { -o-transform: rotate(360deg); transform: rotate(360deg); } } @-ms-keyframes pace-spinner { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } 100% { -ms-transform: rotate(360deg); transform: rotate(360deg); } } @keyframes  pace-spinner { 0% { transform: rotate(0deg); transform: rotate(0deg); } 100% { transform: rotate(360deg); transform: rotate(360deg); } }
+</style>
+
+<script>
+    window.paceOptions = {
+        ajax: false, // disabled
+        document: false, // disabled
+        eventLag: false, // disabled
+    };
+</script>
+<script src="assets/default/vendors/pace-loading/pace.min.js"></script>
+    </head>
+
+<body class="">
+
+<div id="app" class="">
+    
+            <div class="top-navbar d-flex border-bottom">
+    <div class="container d-flex justify-content-between flex-column flex-lg-row">
+        <div class="top-contact-box border-bottom d-flex flex-column flex-md-row align-items-center justify-content-center">
+
+            
+            <div class="d-flex align-items-center justify-content-between justify-content-md-center">
+
+                
+                
+
+                                    <form action="https://edygrad.com/locale" method="post" class="mr-15 mx-md-20">
+                        <input type="hidden" name="_token" value="aXa5IfOq9rYhvVexK4jw0FfbM2rVWEZEvxBH6z18">
+
+                        <input type="hidden" name="locale">
+
+                        <div class="language-select">
+                            <div id="localItems"
+                                 data-selected-country="US"
+                                 data-countries='{&quot;IQ&quot;:&quot;Arabic&quot;,&quot;US&quot;:&quot;English&quot;,&quot;ES&quot;:&quot;Spanish&quot;}'
+                            ></div>
+                        </div>
+                    </form>
+                
+
+                <form action="https://edygrad.com/search" method="get" class="form-inline my-2 my-lg-0 navbar-search position-relative">
+                    <input class="form-control mr-5 rounded" type="text" name="search" placeholder="Search..." aria-label="Search">
+
+                    <button type="submit" class="btn-transparent d-flex align-items-center justify-content-center search-icon">
+                        <i data-feather="search" width="20" height="20" class="mr-10"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="xs-w-100 d-flex align-items-center justify-content-between ">
+            <div class="d-flex">
+
+                <div class="dropdown">
+    <button type="button" disabled class="btn btn-transparent dropdown-toggle" id="navbarShopingCart" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i>
+
+            </button>
+
+    <div class="dropdown-menu" aria-labelledby="navbarShopingCart">
+        <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+            <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+        </div>
+        <div class="h-100">
+            <div class="navbar-shopping-cart h-100" data-simplebar>
+                                    <div class="d-flex align-items-center text-center py-50">
+                        <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i>
+                        <span class="">Your cart is empty</span>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+                <div class="border-left mx-5 mx-lg-15"></div>
+
+                <div class="dropdown">
+    <button type="button" class="btn btn-transparent dropdown-toggle" disabled id="navbarNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i data-feather="bell" width="20" height="20" class="mr-10"></i>
+
+            </button>
+
+    <div class="dropdown-menu pt-20" aria-labelledby="navbarNotification">
+        <div class="d-flex flex-column h-100">
+            <div class="mb-auto navbar-notification-card" data-simplebar>
+                <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+                    <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+                </div>
+
+                                    <div class="d-flex align-items-center text-center py-50">
+                        <i data-feather="bell" width="20" height="20" class="mr-10"></i>
+                        <span class="">Empty notifications</span>
+                    </div>
+                
+            </div>
+
+                    </div>
+    </div>
+</div>
+            </div>
+
+            
+            <div class="d-flex align-items-center ml-md-50">
+        <a href="login.html" class="py-5 px-10 mr-10 text-dark-blue font-14">Login</a>
+        <a href="register.html" class="py-5 px-10 text-dark-blue font-14">Register</a>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="navbarVacuum"></div>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between w-100">
+
+            <a class="navbar-brand navbar-order d-flex align-items-center justify-content-center mr-0 " href="index.html">
+                                    <img src="store/1/default_images/logo2.png" class="img-cover" alt="site logo">
+                            </a>
+
+            <button class="navbar-toggler navbar-order" type="button" id="navbarToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content " id="navbarContent">
+                <div class="navbar-toggle-header text-right d-lg-none">
+                    <button class="btn-transparent" id="navbarClose">
+                        <i data-feather="x" width="32" height="32"></i>
+                    </button>
+                </div>
+
+                <ul class="navbar-nav mr-auto d-flex align-items-center">
+                                            <li class="mr-lg-25">
+                            <div class="menu-category">
+                                <ul>
+                                    <li class="cursor-pointer user-select-none d-flex xs-categories-toggle">
+                                        <i data-feather="grid" width="20" height="20" class="mr-10 d-none d-lg-block"></i>
+                                        Categories
+
+                                        <ul class="cat-dropdown-menu">
+                                                                                            <li>
+                                                    <a href="categories/Development.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="store/1/default_images/categories_icons/code.png" class="cat-dropdown-menu-icon mr-10" alt="ComputerScience icon">
+                                                            ComputerScience
+                                                        </div>
+
+                                                                                                                    <i data-feather="chevron-right" width="20" height="20" class="d-none d-lg-inline-block ml-10"></i>
+                                                            <i data-feather="chevron-down" width="20" height="20" class="d-inline-block d-lg-none"></i>
+                                                                                                            </a>
+
+                                                                                                            <ul class="sub-menu" data-simplebar >
+                                                                                                                            <li>
+                                                                    <a href="categories/Development/MachineLearning.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/layout.png" class="cat-dropdown-menu-icon mr-10" alt="Artificial intelligence icon">
+                                                                        
+                                                                        Artificial intelligence
+                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a href="categories/Development/Mobile-Development.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/smartphone.png" class="cat-dropdown-menu-icon mr-10" alt="Mobile Development icon">
+                                                                        
+                                                                        Mobile Development
+                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a href="categories/Development/Game-Development.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/codesandbox.png" class="cat-dropdown-menu-icon mr-10" alt="Game Development icon">
+                                                                        
+                                                                        Game Development
+                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </li>
+                                                                                            <li>
+                                                    <a href="categories/Business.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="store/1/default_images/categories_icons/anchor.png" class="cat-dropdown-menu-icon mr-10" alt="Business icon">
+                                                            Business
+                                                        </div>
+
+                                                                                                                    <i data-feather="chevron-right" width="20" height="20" class="d-none d-lg-inline-block ml-10"></i>
+                                                            <i data-feather="chevron-down" width="20" height="20" class="d-inline-block d-lg-none"></i>
+                                                                                                            </a>
+
+                                                                                                            <ul class="sub-menu" data-simplebar >
+                                                                                                                            <li>
+                                                                    <a href="categories/Business/Management.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/users.png" class="cat-dropdown-menu-icon mr-10" alt="Management icon">
+                                                                        
+                                                                        Management
+                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a href="categories/Business/Communications.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/share-2.png" class="cat-dropdown-menu-icon mr-10" alt="Communications icon">
+                                                                        
+                                                                        Communications
+                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a href="categories/Business/Business-Strategy.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/target.png" class="cat-dropdown-menu-icon mr-10" alt="Business Strategy icon">
+                                                                        
+                                                                        Business Strategy
+                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </li>
+                                                                                            <li>
+                                                    <a href="categories/Marketing.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="store/1/default_images/categories_icons/pie-chart.png" class="cat-dropdown-menu-icon mr-10" alt="Marketing icon">
+                                                            Marketing
+                                                        </div>
+
+                                                                                                            </a>
+
+                                                                                                    </li>
+                                                                                            <li>
+                                                    <a href="categories/Lifestyle.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="store/1/default_images/categories_icons/umbrella.png" class="cat-dropdown-menu-icon mr-10" alt="Lifestyle icon">
+                                                            Lifestyle
+                                                        </div>
+
+                                                                                                                    <i data-feather="chevron-right" width="20" height="20" class="d-none d-lg-inline-block ml-10"></i>
+                                                            <i data-feather="chevron-down" width="20" height="20" class="d-inline-block d-lg-none"></i>
+                                                                                                            </a>
+
+                                                                                                            <ul class="sub-menu" data-simplebar >
+                                                                                                                            <li>
+                                                                    <a href="categories/Lifestyle/Lifestyle.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/sun.png" class="cat-dropdown-menu-icon mr-10" alt="Lifestyle icon">
+                                                                        
+                                                                        Lifestyle
+                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a href="categories/Lifestyle/Beauty-and-Makeup.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/droplet.png" class="cat-dropdown-menu-icon mr-10" alt="Beauty &amp; Makeup icon">
+                                                                        
+                                                                        Beauty &amp; Makeup
+                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </li>
+                                                                                            <li>
+                                                    <a href="categories/Health-and-Fitness.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="store/1/default_images/categories_icons/heart.png" class="cat-dropdown-menu-icon mr-10" alt="Health &amp; Fitness icon">
+                                                            Health &amp; Fitness
+                                                        </div>
+
+                                                                                                            </a>
+
+                                                                                                    </li>
+                                                                                            <li>
+                                                    <a href="categories/Academics.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="store/1/default_images/categories_icons/briefcase.png" class="cat-dropdown-menu-icon mr-10" alt="Academics icon">
+                                                            Academics
+                                                        </div>
+
+                                                                                                                    <i data-feather="chevron-right" width="20" height="20" class="d-none d-lg-inline-block ml-10"></i>
+                                                            <i data-feather="chevron-down" width="20" height="20" class="d-inline-block d-lg-none"></i>
+                                                                                                            </a>
+
+                                                                                                            <ul class="sub-menu" data-simplebar >
+                                                                                                                            <li>
+                                                                    <a href="categories/Academics/Math.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/divide-square.png" class="cat-dropdown-menu-icon mr-10" alt="Math icon">
+                                                                        
+                                                                        Math
+                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a href="categories/Academics/Science.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/zap.png" class="cat-dropdown-menu-icon mr-10" alt="Science icon">
+                                                                        
+                                                                        Science
+                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a href="categories/Academics/Language.html">
+                                                                                                                                                    <img src="store/1/default_images/categories_icons/sub_categories/globe.png" class="cat-dropdown-menu-icon mr-10" alt="Language icon">
+                                                                        
+                                                                        Language
+                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </li>
+                                                                                            <li>
+                                                    <a href="categories/Design.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="store/1/default_images/categories_icons/feather.png" class="cat-dropdown-menu-icon mr-10" alt="Design icon">
+                                                            Design
+                                                        </div>
+
+                                                                                                            </a>
+
+                                                                                                    </li>
+                                                                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    
+                                                                        <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                                                    <li class="nav-item">
+                                <a class="nav-link" href="classes8676.html?sort=newest">Internship Courses</a>
+                            </li>
+                                                    <li class="nav-item">
+                                <a class="nav-link" href="instructor-finder.html">Instructors</a>
+                            </li>
+                                                    <li class="nav-item">
+                                <a class="nav-link" href="products.html">Projects Store</a>
+                            </li>
+                                                    <li class="nav-item">
+                                <a class="nav-link" href="forums.html">Forums</a>
+                            </li>
+                                                            </ul>
+            </div>
+
+            <div class="nav-icons-or-start-live navbar-order">
+
+                                    <a href="login.html" class="d-none d-lg-flex btn btn-sm btn-primary nav-start-a-live-btn">
+                        Start learning
+                    </a>
+
+                    <a href="login.html" class="d-flex d-lg-none text-primary nav-start-a-live-btn font-14">
+                        Start learning
+                    </a>
+                
+                <div class="d-none nav-notify-cart-dropdown top-navbar ">
+                    <div class="dropdown">
+    <button type="button" disabled class="btn btn-transparent dropdown-toggle" id="navbarShopingCart" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i>
+
+            </button>
+
+    <div class="dropdown-menu" aria-labelledby="navbarShopingCart">
+        <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+            <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+        </div>
+        <div class="h-100">
+            <div class="navbar-shopping-cart h-100" data-simplebar>
+                                    <div class="d-flex align-items-center text-center py-50">
+                        <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i>
+                        <span class="">Your cart is empty</span>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="border-left mx-15"></div>
+
+                    <div class="dropdown">
+    <button type="button" class="btn btn-transparent dropdown-toggle" disabled id="navbarNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i data-feather="bell" width="20" height="20" class="mr-10"></i>
+
+            </button>
+
+    <div class="dropdown-menu pt-20" aria-labelledby="navbarNotification">
+        <div class="d-flex flex-column h-100">
+            <div class="mb-auto navbar-notification-card" data-simplebar>
+                <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+                    <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+                </div>
+
+                                    <div class="d-flex align-items-center text-center py-50">
+                        <i data-feather="bell" width="20" height="20" class="mr-10"></i>
+                        <span class="">Empty notifications</span>
+                    </div>
+                
+            </div>
+
+                    </div>
+    </div>
+</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    
+        <div class="instructor-finder">
+
+                    <section id="instructorFinderMap"
+                     class="instructor-finder-map"
+                     data-latitude="37.71859"
+                     data-longitude="37.617188"
+                     data-zoom="3"
+            >
+
+            </section>
+        
+        <div class="container">
+
+            <form id="filtersForm" action="https://edygrad.com/instructor-finder?" method="get">
+
+                <div id="topFilters" class="mt-25 shadow-lg border border-gray300 rounded-sm p-10 p-md-20">
+    <div class="row align-items-center">
+        <div class="col-lg-9 d-block d-md-flex align-items-center justify-content-start my-25 my-lg-0">
+            <div class="d-flex align-items-center justify-content-between justify-content-md-center">
+                <label class="mb-0 mr-10 cursor-pointer" for="available_for_meetings">Available for Meetings</label>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="available_for_meetings" class="custom-control-input" id="available_for_meetings" >
+                    <label class="custom-control-label" for="available_for_meetings"></label>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between justify-content-md-center mx-0 mx-md-20 my-20 my-md-0">
+                <label class="mb-0 mr-10 cursor-pointer" for="free_meetings">Free Meetings</label>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="free_meetings" class="custom-control-input" id="free_meetings" >
+                    <label class="custom-control-label" for="free_meetings"></label>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between justify-content-md-center">
+                <label class="mb-0 mr-10 cursor-pointer" for="discount">Discount</label>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="discount" class="custom-control-input" id="discount" >
+                    <label class="custom-control-label" for="discount"></label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 d-flex align-items-center">
+            <select name="sort" class="form-control">
+                <option disabled selected>Sort by</option>
+                <option value="">All</option>
+                <option value="top_rate" >Top rate</option>
+                <option value="top_sale" >Top sellers</option>
+            </select>
+        </div>
+
+    </div>
+</div>
+
+                <div class="row flex-lg-row-reverse">
+                    <div class="col-12 col-lg-8">
+
+                        <div id="instructorsList">
+                                                                                                <a href="users/1052/profile.html" class="">
+    <div class="position-relative d-flex flex-wrap instructor-finder-card border border-gray300 rounded-sm py-25 mt-20">
+
+        <div class="col-12 col-md-8 d-flex">
+            <div class="instructor-avatar rounded-circle">
+                <img src="store/1052/avatar/64569a6c8cc18.png" class="img-cover rounded-circle" alt="ROHITH KANTH">
+            </div>
+
+            <div class="ml-20">
+                <h3 class="font-16 font-weight-bold text-secondary">ROHITH KANTH</h3>
+
+                <div>
+                    <span class="d-block font-12 text-gray">Data Scientist at Mu-Sigma</span>
+
+                                            <div class="d-block font-14 text-gray mt-5">
+                                                                                                <span>Math</span>
+                                                                                    </div>
+                                    </div>
+
+                <p class="font-14 text-gray mt-10"></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-10 mt-md-0 pt-10 pt-md-0 instructor-finder-card-right-side position-relative">
+            
+            <div class="d-flex align-items-start">
+                                    <span class="font-weight-bold text-danger font-12">Temporary not available</span>
+                            </div>
+
+            <div class="stars-card d-flex align-items-center  mt-15">
+    
+                        <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                            <i data-feather="star" width="20" height="20" class=""></i>
+                    <i data-feather="star" width="20" height="20" class=""></i>
+        
+                    <span class="badge badge-primary ml-10">3.75</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-20">
+                <i data-feather="clock" width="18" height="18" class="text-dark-blue"></i>
+
+                <span class="font-14 font-weight-500 text-dark-blue ml-10">0 Hours Tutoring</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap mt-15">
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="1 year of Membership">
+                        <img src="store/1/default_images/badges/loyal_user.png" class="img-cover rounded-circle" alt="Loyal User">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 1 Class">
+                        <img src="store/1/default_images/badges/junior_vendor.png" class="img-cover rounded-circle" alt="Junior Vendor">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Rating from 3 to 4">
+                        <img src="store/1/default_images/badges/silver_classes.png" class="img-cover rounded-circle" alt="Silver Classes">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Sales from 10 to 20">
+                        <img src="store/1/default_images/badges/king_seller.png" class="img-cover rounded-circle" alt="King Seller">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Support Rating from 3 to 4">
+                        <img src="store/1/default_images/badges/amazing_support.png" class="img-cover rounded-circle" alt="Amazing Support">
+                    </div>
+                            </div>
+        </div>
+    </div>
+</a>
+                                                                    <a href="users/1016/profile.html" class="">
+    <div class="position-relative d-flex flex-wrap instructor-finder-card border border-gray300 rounded-sm py-25 mt-20">
+
+        <div class="col-12 col-md-8 d-flex">
+            <div class="instructor-avatar rounded-circle">
+                <img src="store/1016/avatar/617a4f17c8e72.png" class="img-cover rounded-circle" alt="Ricardo dave">
+            </div>
+
+            <div class="ml-20">
+                <h3 class="font-16 font-weight-bold text-secondary">Ricardo dave</h3>
+
+                <div>
+                    <span class="d-block font-12 text-gray">Data Analyst at Microsoft</span>
+
+                                            <div class="d-block font-14 text-gray mt-5">
+                                                                                                <span>Design, </span>
+                                                                                                                                <span>Artificial intelligence, </span>
+                                                                                                                                <span>Mobile Development</span>
+                                                                                    </div>
+                                    </div>
+
+                <p class="font-14 text-gray mt-10">Ricardo dave has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science and programming. He has ...</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-10 mt-md-0 pt-10 pt-md-0 instructor-finder-card-right-side position-relative">
+            
+            <div class="d-flex align-items-start">
+                                                            <div class="d-flex flex-column">
+                            <span class="font-20 font-weight-bold text-primary">$60</span>
+
+                                                    </div>
+
+                        <span class="font-14 font-weight-500 text-gray mt-5">/Hour</span>
+                                                </div>
+
+            <div class="stars-card d-flex align-items-center  mt-15">
+    
+                        <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                            <i data-feather="star" width="20" height="20" class=""></i>
+        
+                    <span class="badge badge-primary ml-10">4.58</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-20">
+                <i data-feather="clock" width="18" height="18" class="text-dark-blue"></i>
+
+                <span class="font-14 font-weight-500 text-dark-blue ml-10">0 Hours Tutoring</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap mt-15">
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Old Membership">
+                        <img src="store/1/default_images/badges/faithful_user.png" class="img-cover rounded-circle" alt="Faithful User">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 1 Class">
+                        <img src="store/1/default_images/badges/junior_vendor.png" class="img-cover rounded-circle" alt="Junior Vendor">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/golden_classes.png" class="img-cover rounded-circle" alt="Golden Classes">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Sales from 3 to 9">
+                        <img src="store/1/default_images/badges/top_seller.png" class="img-cover rounded-circle" alt="Top Seller">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Support Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/fantastic_support.png" class="img-cover rounded-circle" alt="Fantastic Support">
+                    </div>
+                            </div>
+        </div>
+    </div>
+</a>
+                                                                    <a href="users/1015/profile.html" class="">
+    <div class="position-relative d-flex flex-wrap instructor-finder-card border border-gray300 rounded-sm py-25 mt-20">
+
+        <div class="col-12 col-md-8 d-flex">
+            <div class="instructor-avatar rounded-circle">
+                <img src="store/1015/avatar/617a4f2fb8a6d.png" class="img-cover rounded-circle" alt="Robert Ransdell">
+            </div>
+
+            <div class="ml-20">
+                <h3 class="font-16 font-weight-bold text-secondary">Robert Ransdell</h3>
+
+                <div>
+                    <span class="d-block font-12 text-gray">System Administrator at Amazon</span>
+
+                                            <div class="d-block font-14 text-gray mt-5">
+                                                                                                <span>Management, </span>
+                                                                                                                                <span>Artificial intelligence, </span>
+                                                                                                                                <span>Mobile Development</span>
+                                                                                    </div>
+                                    </div>
+
+                <p class="font-14 text-gray mt-10">Robert started his career as a Unix and Linux System Engineer in 1999. Since that time he has utilized his Linux skills at companies such as Xerox, UPS, Hewlett-Packard, and Amazon.com. Additionally, ...</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-10 mt-md-0 pt-10 pt-md-0 instructor-finder-card-right-side position-relative">
+            
+            <div class="d-flex align-items-start">
+                                                            <div class="d-flex flex-column">
+                            <span class="font-20 font-weight-bold text-primary">$100</span>
+
+                                                    </div>
+
+                        <span class="font-14 font-weight-500 text-gray mt-5">/Hour</span>
+                                                </div>
+
+            <div class="stars-card d-flex align-items-center  mt-15">
+    
+                        <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                            <i data-feather="star" width="20" height="20" class=""></i>
+        
+                    <span class="badge badge-primary ml-10">4.75</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-20">
+                <i data-feather="clock" width="18" height="18" class="text-dark-blue"></i>
+
+                <span class="font-14 font-weight-500 text-dark-blue ml-10">0 Hours Tutoring</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap mt-15">
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Old Membership">
+                        <img src="store/1/default_images/badges/faithful_user.png" class="img-cover rounded-circle" alt="Faithful User">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 3 to 6 Classes">
+                        <img src="store/1/default_images/badges/expert_vendor.png" class="img-cover rounded-circle" alt="Expert Vendor">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/golden_classes.png" class="img-cover rounded-circle" alt="Golden Classes">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Sales from 10 to 20">
+                        <img src="store/1/default_images/badges/king_seller.png" class="img-cover rounded-circle" alt="King Seller">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Support Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/fantastic_support.png" class="img-cover rounded-circle" alt="Fantastic Support">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 2 to 5 Topics">
+                        <img src="store/1/default_images/badges/Forums%20Top%20User.svg" class="img-cover rounded-circle" alt="Forums Top User">
+                    </div>
+                            </div>
+        </div>
+    </div>
+</a>
+                                                                    <a href="users/934/profile.html" class="">
+    <div class="position-relative d-flex flex-wrap instructor-finder-card border border-gray300 rounded-sm py-25 mt-20">
+
+        <div class="col-12 col-md-8 d-flex">
+            <div class="instructor-avatar rounded-circle">
+                <img src="store/934/avatar/617a4f418be6b.png" class="img-cover rounded-circle" alt="Linda Anderson">
+            </div>
+
+            <div class="ml-20">
+                <h3 class="font-16 font-weight-bold text-secondary">Linda Anderson</h3>
+
+                <div>
+                    <span class="d-block font-12 text-gray">IT Technician at IBM</span>
+
+                                            <div class="d-block font-14 text-gray mt-5">
+                                                                                                <span>Marketing, </span>
+                                                                                                                                <span>Artificial intelligence, </span>
+                                                                                                                                <span>Mobile Development, </span>
+                                                                                                                                <span>Game Development</span>
+                                                                                    </div>
+                                    </div>
+
+                <p class="font-14 text-gray mt-10">I am a programmer with over 12 years&#039; experience gained in a range of industries, the last 16 with IBM.
+
+I am now self employed developing apps for Android; programming in a range of languages ...</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-10 mt-md-0 pt-10 pt-md-0 instructor-finder-card-right-side position-relative">
+            
+            <div class="d-flex align-items-start">
+                                                            <div class="d-flex flex-column">
+                            <span class="font-20 font-weight-bold text-primary">$100</span>
+
+                                                    </div>
+
+                        <span class="font-14 font-weight-500 text-gray mt-5">/Hour</span>
+                                                </div>
+
+            <div class="stars-card d-flex align-items-center  mt-15">
+    
+                        <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                            <i data-feather="star" width="20" height="20" class=""></i>
+        
+                    <span class="badge badge-primary ml-10">4.63</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-20">
+                <i data-feather="clock" width="18" height="18" class="text-dark-blue"></i>
+
+                <span class="font-14 font-weight-500 text-dark-blue ml-10">0 Hours Tutoring</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap mt-15">
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Old Membership">
+                        <img src="store/1/default_images/badges/faithful_user.png" class="img-cover rounded-circle" alt="Faithful User">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 2 Classes">
+                        <img src="store/1/default_images/badges/senior_vendor.png" class="img-cover rounded-circle" alt="Senior Vendor">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/golden_classes.png" class="img-cover rounded-circle" alt="Golden Classes">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Sales from 1 to 2">
+                        <img src="store/1/default_images/badges/best_seller.png" class="img-cover rounded-circle" alt="Best Seller">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Support Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/fantastic_support.png" class="img-cover rounded-circle" alt="Fantastic Support">
+                    </div>
+                            </div>
+        </div>
+    </div>
+</a>
+                                                                    <a href="users/929/profile.html" class="">
+    <div class="position-relative d-flex flex-wrap instructor-finder-card border border-gray300 rounded-sm py-25 mt-20">
+
+        <div class="col-12 col-md-8 d-flex">
+            <div class="instructor-avatar rounded-circle">
+                <img src="store/929/avatar/617a4f5d834c8.png" class="img-cover rounded-circle" alt="Kate Williams">
+            </div>
+
+            <div class="ml-20">
+                <h3 class="font-16 font-weight-bold text-secondary">Kate Williams</h3>
+
+                <div>
+                    <span class="d-block font-12 text-gray">Computer Engineer at Oracle</span>
+
+                                            <div class="d-block font-14 text-gray mt-5">
+                                                                                                <span>Lifestyle, </span>
+                                                                                                                                <span>Marketing, </span>
+                                                                                                                                <span>Management, </span>
+                                                                                                                                <span>Communications, </span>
+                                                                                                                                <span>Business Strategy</span>
+                                                                                    </div>
+                                    </div>
+
+                <p class="font-14 text-gray mt-10">&quot;Short courses for busy managers&quot;
+
+Hi there, my name is Kate Williams and I&#039;ve been managing projects and virtual teams for the past 10+ years.
+
+I&#039;m currently a Director at Cisco Systems,* where I ...</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-10 mt-md-0 pt-10 pt-md-0 instructor-finder-card-right-side position-relative">
+            
+            <div class="d-flex align-items-start">
+                                                            <div class="d-flex flex-column">
+                            <span class="font-20 font-weight-bold text-primary">$200</span>
+
+                                                    </div>
+
+                        <span class="font-14 font-weight-500 text-gray mt-5">/Hour</span>
+                                                </div>
+
+            <div class="stars-card d-flex align-items-center  mt-15">
+    
+                        <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                            <i data-feather="star" width="20" height="20" class=""></i>
+                    <i data-feather="star" width="20" height="20" class=""></i>
+        
+                    <span class="badge badge-primary ml-10">3.42</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-20">
+                <i data-feather="clock" width="18" height="18" class="text-dark-blue"></i>
+
+                <span class="font-14 font-weight-500 text-dark-blue ml-10">0 Hours Tutoring</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap mt-15">
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Old Membership">
+                        <img src="store/1/default_images/badges/faithful_user.png" class="img-cover rounded-circle" alt="Faithful User">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 3 to 6 Classes">
+                        <img src="store/1/default_images/badges/expert_vendor.png" class="img-cover rounded-circle" alt="Expert Vendor">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/golden_classes.png" class="img-cover rounded-circle" alt="Golden Classes">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Sales from 3 to 9">
+                        <img src="store/1/default_images/badges/top_seller.png" class="img-cover rounded-circle" alt="Top Seller">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Support Rating from 3 to 4">
+                        <img src="store/1/default_images/badges/amazing_support.png" class="img-cover rounded-circle" alt="Amazing Support">
+                    </div>
+                            </div>
+        </div>
+    </div>
+</a>
+                                                                    <a href="users/923/profile.html" class="">
+    <div class="position-relative d-flex flex-wrap instructor-finder-card border border-gray300 rounded-sm py-25 mt-20">
+
+        <div class="col-12 col-md-8 d-flex">
+            <div class="instructor-avatar rounded-circle">
+                <img src="store/923/avatar/617a4f9983fe5.png" class="img-cover rounded-circle" alt="John Powe">
+            </div>
+
+            <div class="ml-20">
+                <h3 class="font-16 font-weight-bold text-secondary">John Powe</h3>
+
+                <div>
+                    <span class="d-block font-12 text-gray">IT Director at Cognizant</span>
+
+                                            <div class="d-block font-14 text-gray mt-5">
+                                                                                                <span>Lifestyle, </span>
+                                                                                                                                <span>Management, </span>
+                                                                                                                                <span>Business Strategy</span>
+                                                                                    </div>
+                                    </div>
+
+                <p class="font-14 text-gray mt-10">Hello! I am John Powe; let me welcome you on this platform. I have created unique courses on different subjects including Business, marketing, Sales, Psychology, Copywriting, Social media marketing ...</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-10 mt-md-0 pt-10 pt-md-0 instructor-finder-card-right-side position-relative">
+                            <span class="off-badge badge badge-danger">10% Offer</span>
+            
+            <div class="d-flex align-items-start">
+                                                            <div class="d-flex flex-column">
+                            <span class="font-20 font-weight-bold text-primary">$90</span>
+
+                                                            <span class="font-14 font-weight-500 text-gray text-decoration-line-through">$100</span>
+                                                    </div>
+
+                        <span class="font-14 font-weight-500 text-gray mt-5">/Hour</span>
+                                                </div>
+
+            <div class="stars-card d-flex align-items-center  mt-15">
+    
+                        <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                    <i data-feather="star" width="20" height="20" class="active"></i>
+                
+                    <span class="badge badge-primary ml-10">5.00</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-20">
+                <i data-feather="clock" width="18" height="18" class="text-dark-blue"></i>
+
+                <span class="font-14 font-weight-500 text-dark-blue ml-10">0 Hours Tutoring</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap mt-15">
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Old Membership">
+                        <img src="store/1/default_images/badges/faithful_user.png" class="img-cover rounded-circle" alt="Faithful User">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 2 Classes">
+                        <img src="store/1/default_images/badges/senior_vendor.png" class="img-cover rounded-circle" alt="Senior Vendor">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Classes Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/golden_classes.png" class="img-cover rounded-circle" alt="Golden Classes">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Support Rating from 4 to 5">
+                        <img src="store/1/default_images/badges/fantastic_support.png" class="img-cover rounded-circle" alt="Fantastic Support">
+                    </div>
+                                    <div class="mr-15 mt-10 instructor-badge rounded-circle" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Has 2 to 5 Topics">
+                        <img src="store/1/default_images/badges/Forums%20Top%20User.svg" class="img-cover rounded-circle" alt="Forums Top User">
+                    </div>
+                            </div>
+        </div>
+    </div>
+</a>
+                                                                                    </div>
+
+                        <div class="text-center">
+                            <button type="button" id="loadMoreInstructors" data-url="/instructor-finder" class="btn btn-border-white mt-50 ">More instructors</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+
+                        <div class="mt-20 p-20 rounded-sm shadow-lg border border-gray300 filters-container">
+    <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">Filters</h3>
+
+    <div class="form-group mt-20">
+        <label for="category_id">Category</label>
+
+        <select name="category_id" id="category_id" class="form-control">
+            <option value="">Select a category</option>
+
+                                                                        <optgroup label="ComputerScience">
+                                                            <option value="606" >Artificial intelligence</option>
+                                                            <option value="607" >Mobile Development</option>
+                                                            <option value="608" >Game Development</option>
+                                                    </optgroup>
+                                                                                <optgroup label="Business">
+                                                            <option value="609" >Management</option>
+                                                            <option value="610" >Communications</option>
+                                                            <option value="611" >Business Strategy</option>
+                                                    </optgroup>
+                                                                                <option value="525" >Marketing</option>
+                                                                                <optgroup label="Lifestyle">
+                                                            <option value="604" >Lifestyle</option>
+                                                            <option value="605" >Beauty &amp; Makeup</option>
+                                                    </optgroup>
+                                                                                <option value="523" >Health &amp; Fitness</option>
+                                                                                <optgroup label="Academics">
+                                                            <option value="601" >Math</option>
+                                                            <option value="602" >Science</option>
+                                                            <option value="603" >Language</option>
+                                                    </optgroup>
+                                                                                <option value="520" >Design</option>
+                                                        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="level_of_training">Training level</label>
+
+        <select name="level_of_training" class="form-control">
+            <option value="">Not preferenced</option>
+            <option value="beginner" >Beginner</option>
+            <option value="middle" >Intermediate</option>
+            <option value="expert" >Advanced</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="gender">Instructor gender</label>
+
+        <select name="gender" id="gender" class="form-control">
+            <option value="">Not preferenced</option>
+
+            <option value="man" >Male</option>
+            <option value="woman" >Female</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="instructor_type">Instructor type</label>
+
+        <select name="role" id="instructor_type" class="form-control">
+            <option value="">Not preferenced</option>
+            <option value="teacher" >Instructor</option>
+            <option value="organization" >Organization</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label class="input-label">Meeting Type</label>
+
+        <div class="d-flex align-items-center wizard-custom-radio mt-5">
+            <div class="wizard-custom-radio-item flex-grow-1">
+                <input type="radio" name="meeting_type" value="all" id="all" class="" >
+                <label class="font-12 cursor-pointer px-15 py-10" for="all">All</label>
+            </div>
+
+            <div class="wizard-custom-radio-item flex-grow-1">
+                <input type="radio" name="meeting_type" value="in_person" id="in_person" class="" >
+                <label class="font-12 cursor-pointer px-15 py-10" for="in_person">In-person</label>
+            </div>
+
+            <div class="wizard-custom-radio-item flex-grow-1">
+                <input type="radio" name="meeting_type" value="online" id="online" class="" >
+                <label class="font-12 cursor-pointer px-15 py-10" for="online">Online</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="input-label">Population</label>
+
+        <div class="d-flex align-items-center wizard-custom-radio mt-5">
+            <div class="wizard-custom-radio-item flex-grow-1">
+                <input type="radio" name="population" value="all" id="population_all" class="" >
+                <label class="font-12 cursor-pointer px-15 py-10" for="population_all">All</label>
+            </div>
+
+            <div class="wizard-custom-radio-item flex-grow-1">
+                <input type="radio" name="population" value="single" id="population_single" class="" >
+                <label class="font-12 cursor-pointer px-15 py-10" for="population_single">Individual</label>
+            </div>
+
+            <div class="wizard-custom-radio-item flex-grow-1">
+                <input type="radio" name="population" value="group" id="population_group" class="" >
+                <label class="font-12 cursor-pointer px-15 py-10" for="population_group">Group</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group pb-20">
+        <label class="form-label">Price Range</label>
+        <div
+            class="range wrunner-value-bottom"
+            id="priceRange"
+            data-minLimit="0"
+            data-maxLimit="1000"
+        >
+            <input type="hidden" name="min_price" value="">
+            <input type="hidden" name="max_price" value="">
+        </div>
+    </div>
+
+    <div class="form-group pb-20">
+        <label class="form-label">Instructor Age</label>
+        <div
+            class="range wrunner-value-bottom"
+            id="instructorAgeRange"
+            data-minLimit="0"
+            data-maxLimit="100"
+        >
+            <input type="hidden" name="min_age" value="">
+            <input type="hidden" name="max_age" value="">
+        </div>
+    </div>
+</div>
+
+                        <div class="mt-20 p-20 rounded-sm shadow-lg border border-gray300 filters-container">
+    <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">Time</h3>
+
+    <div class="mt-35">
+                    <div class="custom-control custom-checkbox mb-20 full-checkbox w-100">
+                <input type="checkbox" name="day[]" value="saturday" class="custom-control-input" id="day_saturday" >
+                <label class="custom-control-label font-14 w-100" for="day_saturday">Saturday</label>
+            </div>
+                    <div class="custom-control custom-checkbox mb-20 full-checkbox w-100">
+                <input type="checkbox" name="day[]" value="sunday" class="custom-control-input" id="day_sunday" >
+                <label class="custom-control-label font-14 w-100" for="day_sunday">Sunday</label>
+            </div>
+                    <div class="custom-control custom-checkbox mb-20 full-checkbox w-100">
+                <input type="checkbox" name="day[]" value="monday" class="custom-control-input" id="day_monday" >
+                <label class="custom-control-label font-14 w-100" for="day_monday">Monday</label>
+            </div>
+                    <div class="custom-control custom-checkbox mb-20 full-checkbox w-100">
+                <input type="checkbox" name="day[]" value="tuesday" class="custom-control-input" id="day_tuesday" >
+                <label class="custom-control-label font-14 w-100" for="day_tuesday">Tuesday</label>
+            </div>
+                    <div class="custom-control custom-checkbox mb-20 full-checkbox w-100">
+                <input type="checkbox" name="day[]" value="wednesday" class="custom-control-input" id="day_wednesday" >
+                <label class="custom-control-label font-14 w-100" for="day_wednesday">Wednesday</label>
+            </div>
+                    <div class="custom-control custom-checkbox mb-20 full-checkbox w-100">
+                <input type="checkbox" name="day[]" value="thursday" class="custom-control-input" id="day_thursday" >
+                <label class="custom-control-label font-14 w-100" for="day_thursday">Thursday</label>
+            </div>
+                    <div class="custom-control custom-checkbox mb-20 full-checkbox w-100">
+                <input type="checkbox" name="day[]" value="friday" class="custom-control-input" id="day_friday" >
+                <label class="custom-control-label font-14 w-100" for="day_friday">Friday</label>
+            </div>
+            </div>
+
+    <div class="form-group">
+        <label class="form-label">Time Range</label>
+        <div
+            class="range wrunner-value-bottom"
+            id="timeRangeInstructorPage"
+            data-minLimit="0"
+            data-maxLimit="23"
+        >
+            <input type="hidden" name="min_time" value="">
+            <input type="hidden" name="max_time" value="">
+        </div>
+    </div>
+</div>
+
+                        <div class="mt-20 p-20 rounded-sm shadow-lg border border-gray300 filters-container">
+    <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">Location</h3>
+
+    <div class="form-group mt-20">
+        <label class="input-label font-weight-500">Country</label>
+
+        <select name="country_id" class="form-control">
+            <option value="">Select Country</option>
+
+                                                <option value="16" >France</option>
+                                    <option value="17" >India</option>
+                                    <option value="18" >United States</option>
+                                    <option value="19" >Chad</option>
+                                    <option value="20" >Saudi Arabia</option>
+                                    </select>
+    </div>
+
+    <div class="form-group mt-10">
+        <label class="input-label font-weight-500">Province</label>
+
+        <select name="province_id" class="form-control" disabled>
+            <option value="">Select Province</option>
+
+                    </select>
+    </div>
+
+    <div class="form-group mt-10">
+        <label class="input-label font-weight-500">City</label>
+
+        <select name="city_id" class="form-control" disabled>
+            <option value="">Select City</option>
+
+                    </select>
+    </div>
+
+    <div class="form-group mt-10">
+        <label class="input-label font-weight-500">District</label>
+
+        <select name="district_id" class="form-control" disabled>
+            <option value="">Select District</option>
+
+                    </select>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+            <footer class="footer bg-secondary position-relative user-select-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class=" footer-subscribe d-block d-md-flex align-items-center justify-content-between">
+                    <div class="flex-grow-1">
+                        <strong>Join us today</strong>
+                        <span class="d-block mt-5 text-white">#We will send the best deals and offers to your email.</span>
+                    </div>
+                    <div class="subscribe-input bg-white p-10 flex-grow-1 mt-30 mt-md-0">
+                        <form action="https://edygrad.com/newsletters" method="post">
+                            <input type="hidden" name="_token" value="aXa5IfOq9rYhvVexK4jw0FfbM2rVWEZEvxBH6z18">
+
+                            <div class="form-group d-flex align-items-center m-0">
+                                <div class="w-100">
+                                    <input type="text" name="newsletter_email" class="form-control border-0 " placeholder="Enter your email here"/>
+                                                                    </div>
+                                <button type="submit" class="btn btn-primary rounded-pill">Join</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="row">
+
+                            <div class="col-6 col-md-3">
+                                                                        <span class="header d-block text-white font-weight-bold">About US</span>
+                        
+                                                    <div class="mt-20">
+                                <p><font color="#ffffff">Edygrad is a fully-featured learning management system that helps you to run your education business in several hours. This platform helps instructors to create professional education materials and helps students to learn from the best instructors.Edygrad<span style="orphans: 2; text-align: left; text-indent: 0px; widows: 2; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">&nbsp;is a fully-featured learning management system that helps you to run your education business in several hours. This platform helps instructors to create professional education materials and helps students to learn from the best instructors.</span></font></p>
+                            </div>
+                                                            </div>
+                            <div class="col-6 col-md-3">
+                                                                        <span class="header d-block text-white font-weight-bold">Additional Links</span>
+                        
+                                                    <div class="mt-20">
+                                <p><a href="login.html"><font color="#ffffff">- Login</font></a></p><p><font color="#ffffff"><a href="register.html"><font color="#ffffff">- Register</font></a><br></font></p><p><a href="blog.html"><font color="#ffffff">- Blog</font></a></p><p><a href="contact.html"><font color="#ffffff">- Contact us</font></a></p><p><font color="#ffffff"><a href="certificate_validation.html"><font color="#ffffff">- Certificate validation</font></a><br></font></p><p><font color="#ffffff"><a href="login.html"><font color="#ffffff">- Become instructor</font></a><br></font></p><p><a href="pages/terms.html"><font color="#ffffff">- Terms &amp; rules</font></a></p><p><a href="pages/about.html"><font color="#ffffff">- About us</font></a><br></p>
+                            </div>
+                                                            </div>
+                            <div class="col-6 col-md-3">
+                                                                        <span class="header d-block text-white font-weight-bold">Similar Businesses</span>
+                        
+                                                    <div class="mt-20">
+                                <p><a href="https://www.udemy.com/" target="_blank"><font color="#ffffff">- Udemy</font></a></p><p><a href="https://www.skillshare.com/" target="_blank"><font color="#ffffff">- Skillshare</font></a></p><p><a href="https://www.coursera.org/" target="_blank"><font color="#ffffff">- Coursera</font></a></p><p><a href="https://www.linkedin.com/learning/" target="_blank"><font color="#ffffff">- Lynda</font></a></p><p><a href="https://www.skillsoft.com/" target="_blank"><font color="#ffffff">- Skillsoft</font></a></p><p><a href="https://www.udacity.com/" target="_blank"><font color="#ffffff">- Udacity</font></a></p><p><a href="https://www.edx.org/" target="_blank"><font color="#ffffff">- edX</font></a></p><p><a href="https://www.masterclass.com/" target="_blank"><font color="#ffffff">- Masterclass</font></a><br></p>
+                            </div>
+                                                            </div>
+                            <div class="col-6 col-md-3">
+                                                                        <span class="header d-block text-white font-weight-bold">Edygrad</span>
+                        
+                                                    <div class="mt-20">
+                                <p><a title="Notnt" href="https://codecanyon.net/"></a></p>
+                            </div>
+                                                            </div>
+            
+        </div>
+
+        <div class="mt-40 border-blue py-25 d-flex align-items-center justify-content-between">
+            <div class="footer-logo">
+                <a href="index.html">
+                                            <img src="store/1/default_images/logo2.png" class="img-cover" alt="footer logo">
+                                    </a>
+            </div>
+            <div class="footer-social">
+                                                            <a href="https://www.instagram.com/">
+                            <img src="store/1/default_images/social/instagram.svg" alt="Instagram" class="mr-15">
+                        </a>
+                                            <a href="https://web.whatsapp.com/">
+                            <img src="store/1/default_images/social/whatsapp.svg" alt="Whatsapp" class="mr-15">
+                        </a>
+                                            <a href="https://twitter.com/">
+                            <img src="store/1/default_images/social/twitter.svg" alt="Twitter" class="mr-15">
+                        </a>
+                                            <a href="https://www.facebook.com/">
+                            <img src="store/1/default_images/social/facebook.svg" alt="Facebook" class="mr-15">
+                        </a>
+                                                </div>
+        </div>
+    </div>
+
+            <div class="footer-copyright-card">
+            <div class="container d-flex align-items-center justify-content-between py-15">
+                <div class="font-14 text-white">All rights are reserved for learning management system platform</div>
+
+                <div class="d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center text-white font-14">
+                            <i data-feather="phone" width="20" height="20" class="mr-10"></i>
+                            9505367011
+                        </div>
+                    
+                                            <div class="border-left mx-5 mx-lg-15 h-100"></div>
+
+                        <div class="d-flex align-items-center text-white font-14">
+                            <i data-feather="mail" width="20" height="20" class="mr-10"></i>
+                            join@edygrad.in
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    
+</footer>
+    
+    
+    </div>
+<!-- Template JS File -->
+<script src="assets/default/js/app.js"></script>
+<script src="assets/default/vendors/feather-icons/dist/feather.min.js"></script>
+<script src="assets/default/vendors/moment.min.js"></script>
+<script src="assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="assets/default/vendors/toast/jquery.toast.min.js"></script>
+<script type="text/javascript" src="assets/default/vendors/simplebar/simplebar.min.js"></script>
+
+    <div class="cookie-security-dialog p-20 bg-gray rounded-lg">
+        <h3 class="font-14 font-weight-bold text-white">Your privacy matters</h3>
+        <p class="mt-5 text-white font-12">Cookies and similar technologies are used on our sites to personalize content and ads. You can find further details and change your personal settings below. By clicking OK, or by clicking any content on our sites, you agree to the use of these cookies and similar technologies.</p>
+
+        <div class="mt-10 d-flex flex-wrap align-items-center">
+            <button type="button" class="js-accept-all-cookies btn btn-primary btn-sm flex-grow-1 mr-0 mr-md-5">Accept all cookies</button>
+            <button type="button" class="js-cookie-customize-settings btn btn-light btn-sm flex-grow-1 mt-10 mt-md-0">Customize settings</button>
+        </div>
+    </div>
+
+    <div id="cookieSecurityModal" class="d-none">
+        <h3 class="section-title after-line font-20 text-dark-blue mb-10">GDPR</h3>
+
+        <p class="mt-10 cookie-security-modal-description"><p>When you visit any of our websites, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and manage your preferences. Please note, that blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p></p>
+
+                    <form class="js-cookie-form-customize-inputs mt-25">
+
+                                    
+                    <div class="cookie-settings-modal-items-card mb-15">
+                        <div class="form-group d-flex align-items-center mb-0">
+                            <div class="custom-control custom-checkbox c-not-allowed">
+                                <input type="checkbox" name="settings" value="strictly_necessary" class="custom-control-input"  checked=&quot;checked&quot; disabled=&quot;disabled&quot;  id="cookieModalItemdDRjfkGvQfFzQJpa_record">
+                                <label class="custom-control-label" for="cookieModalItemdDRjfkGvQfFzQJpa_record"></label>
+                            </div>
+                            <label class="cursor-pointer font-14 text-gray mb-0 c-not-allowed" for="cookieModalItemdDRjfkGvQfFzQJpa_record">Strictly Necessary</label>
+
+                                                            <input type="hidden" name="settings" value="strictly_necessary">
+                            
+                                                            <button type="button" class="js-cookie-settings-modal-items-help btn-transparent ml-15">
+                                    <i data-feather="help-circle" width="20" height="20" class="text-gray"></i>
+                                </button>
+                                                    </div>
+
+                        <ul class="cookie-settings-modal-items-card__description">
+                            <li class="font-12 text-gray">These cookies are necessary for our website to function properly and cannot be switched off in our systems. They are usually only set in response to actions made by you that amount to a request for services, such as setting your privacy preferences, logging in or filling in forms, or where they’re essential to providing you with a service you have requested. You cannot opt out of these cookies. You can set your browser to block or alert you about these cookies, but if you do, some parts of the site will not then work. These cookies do not store any personally identifiable information.</li>
+                        </ul>
+                    </div>
+
+                                    
+                    <div class="cookie-settings-modal-items-card mb-15">
+                        <div class="form-group d-flex align-items-center mb-0">
+                            <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" name="settings" value="performance_cookies" class="custom-control-input"  id="cookieModalItemmOzJowgvTnWFlRzz_record">
+                                <label class="custom-control-label" for="cookieModalItemmOzJowgvTnWFlRzz_record"></label>
+                            </div>
+                            <label class="cursor-pointer font-14 text-gray mb-0 " for="cookieModalItemmOzJowgvTnWFlRzz_record">Performance Cookies</label>
+
+                            
+                                                            <button type="button" class="js-cookie-settings-modal-items-help btn-transparent ml-15">
+                                    <i data-feather="help-circle" width="20" height="20" class="text-gray"></i>
+                                </button>
+                                                    </div>
+
+                        <ul class="cookie-settings-modal-items-card__description">
+                            <li class="font-12 text-gray">These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site, which helps us optimize your experience. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not be able to use your data in this way.</li>
+                        </ul>
+                    </div>
+
+                                    
+                    <div class="cookie-settings-modal-items-card mb-15">
+                        <div class="form-group d-flex align-items-center mb-0">
+                            <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" name="settings" value="functional_cookies" class="custom-control-input"  id="cookieModalItemXBMtdYaeSrqMicTH_record">
+                                <label class="custom-control-label" for="cookieModalItemXBMtdYaeSrqMicTH_record"></label>
+                            </div>
+                            <label class="cursor-pointer font-14 text-gray mb-0 " for="cookieModalItemXBMtdYaeSrqMicTH_record">Functional Cookies</label>
+
+                            
+                                                            <button type="button" class="js-cookie-settings-modal-items-help btn-transparent ml-15">
+                                    <i data-feather="help-circle" width="20" height="20" class="text-gray"></i>
+                                </button>
+                                                    </div>
+
+                        <ul class="cookie-settings-modal-items-card__description">
+                            <li class="font-12 text-gray">These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</li>
+                        </ul>
+                    </div>
+
+                                    
+                    <div class="cookie-settings-modal-items-card mb-15">
+                        <div class="form-group d-flex align-items-center mb-0">
+                            <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" name="settings" value="targeting_cookies" class="custom-control-input"  id="cookieModalItemXlLqzsvNpRqdcNWP_record">
+                                <label class="custom-control-label" for="cookieModalItemXlLqzsvNpRqdcNWP_record"></label>
+                            </div>
+                            <label class="cursor-pointer font-14 text-gray mb-0 " for="cookieModalItemXlLqzsvNpRqdcNWP_record">Targeting Cookies</label>
+
+                            
+                                                            <button type="button" class="js-cookie-settings-modal-items-help btn-transparent ml-15">
+                                    <i data-feather="help-circle" width="20" height="20" class="text-gray"></i>
+                                </button>
+                                                    </div>
+
+                        <ul class="cookie-settings-modal-items-card__description">
+                            <li class="font-12 text-gray">These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.</li>
+                        </ul>
+                    </div>
+
+                
+            </form>
+        
+        <div class="d-flex flex-wrap align-items-center mt-20 pt-15 border-top">
+            <button type="button" class="js-store-customize-cookies d-inline-flex d-md-none btn btn-primary btn-sm">Confirm</button>
+            <button type="button" class="js-store-customize-cookies d-none d-md-inline-flex btn btn-primary btn-sm">Confirm my choices</button>
+
+            <button type="button" class="js-accept-all-cookies d-inline-flex d-md-none btn btn-outline-primary btn-sm mx-15">Accept all</button>
+            <button type="button" class="js-accept-all-cookies d-none d-md-inline-flex btn btn-outline-primary btn-sm mx-15">Accept all cookies</button>
+
+            <button type="button" class="btn-transparent close-swl ml-auto font-14 text-danger">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        var oopsLang = 'Oops...';
+        var somethingWentWrongLang = 'Something went wrong...';
+    </script>
+    <script type="text/javascript" src="assets/default/js/parts/cookie-security.min.js"></script>
+
+
+<script>
+    var deleteAlertTitle = 'Are you sure?';
+    var deleteAlertHint = 'This action cannot be undone!';
+    var deleteAlertConfirm = 'Delete';
+    var deleteAlertCancel = 'Cancel';
+    var deleteAlertSuccess = 'Success';
+    var deleteAlertFail = 'Failed';
+    var deleteAlertFailHint = 'Error while deleting item!';
+    var deleteAlertSuccessHint = 'Item successfully deleted.';
+    var forbiddenRequestToastTitleLang = '&quot;FORBIDDEN&quot; Request';
+    var forbiddenRequestToastMsgLang = 'You not access to this content.';
+</script>
+
+
+    <script src="assets/vendors/wrunner-html-range-slider-with-2-handles/js/wrunner-jquery.js"></script>
+    <script src="assets/vendors/leaflet/leaflet.min.js"></script>
+    <script src="assets/vendors/leaflet/leaflet.markercluster/leaflet.markercluster-src.js"></script>
+    <script src="assets/default/vendors/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var currency = '$';
+        var profileLang = 'Profile';
+        var hourLang = 'Hour';
+        var mapUsers = JSON.parse("[{\u0022id\u0022:1052,\u0022full_name\u0022:\u0022ROHITH KANTH\u0022,\u0022role_name\u0022:\u0022teacher\u0022,\u0022organ_id\u0022:null,\u0022mobile\u0022:\u0022919505367011\u0022,\u0022email\u0022:\u0022rohithpenki8@gmail.com\u0022,\u0022bio\u0022:\u0022Data Scientist at Mu-Sigma\u0022,\u0022logged_count\u0022:3,\u0022verified\u0022:0,\u0022financial_approval\u0022:0,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/1052\\\/avatar\\\/64569a6c8cc18.png\u0022,\u0022avatar_settings\u0022:\u0022{\\\u0022color\\\u0022:\\\u0022000000\\\u0022,\\\u0022background\\\u0022:\\\u0022c5cae9\\\u0022}\u0022,\u0022cover_img\u0022:\u0022\\\/store\\\/1052\\\/AI.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:null,\u0022address\u0022:\u0022\u0022,\u0022country_id\u0022:17,\u0022province_id\u0022:null,\u0022city_id\u0022:null,\u0022district_id\u0022:null,\u0022location\u0022:[\u002228.6176788400956\u0022,\u002277.2024726867676\u0022],\u0022level_of_training\u0022:[\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:null,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022Asia\\\/Kolkata\u0022,\u0022newsletter\u0022:1,\u0022public_message\u0022:1,\u0022identity_scan\u0022:\u0022\u0022,\u0022certificate\u0022:\u0022\u0022,\u0022commission\u0022:null,\u0022affiliate\u0022:0,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1683383471,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:1,\u0022userLocation\u0022:\u0022POINT(28.6176788400956 77.2024726867676)\u0022,\u0022price\u0022:null,\u0022rate\u0022:\u00223.75\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/1052\\\/profile\u0022,\u0022meeting\u0022:{\u0022id\u0022:37,\u0022creator_id\u0022:1052,\u0022amount\u0022:null,\u0022discount\u0022:null,\u0022in_person\u0022:0,\u0022in_person_amount\u0022:null,\u0022group_meeting\u0022:0,\u0022online_group_min_student\u0022:null,\u0022online_group_max_student\u0022:null,\u0022online_group_amount\u0022:null,\u0022in_person_group_min_student\u0022:null,\u0022in_person_group_max_student\u0022:null,\u0022in_person_group_amount\u0022:null,\u0022disabled\u0022:0,\u0022created_at\u0022:1691331955,\u0022meeting_times_count\u0022:0,\u0022meeting_times\u0022:[]},\u0022occupations\u0022:[{\u0022id\u0022:1071,\u0022user_id\u0022:1052,\u0022category_id\u0022:601}]},{\u0022id\u0022:1016,\u0022full_name\u0022:\u0022Ricardo dave\u0022,\u0022role_name\u0022:\u0022teacher\u0022,\u0022organ_id\u0022:null,\u0022mobile\u0022:\u0022+12025250175\u0022,\u0022email\u0022:\u0022Ricardodave09@hotmail.com\u0022,\u0022bio\u0022:\u0022Data Analyst at Microsoft\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:0,\u0022financial_approval\u0022:1,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/1016\\\/avatar\\\/617a4f17c8e72.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/1016\\\/7.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022Ricardo dave has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science and programming. He has publications and patents in various fields such as microfluidics, materials science, and data science technologies. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming the ability to analyze data, as well as present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Data Inc. and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to contact him on LinkedIn for more information on in-person training sessions or group training sessions in Las Vegas, NV.\u0022,\u0022address\u0022:\u0022Luib, 72 Wern Ddu Lane\u0022,\u0022country_id\u0022:16,\u0022province_id\u0022:22,\u0022city_id\u0022:23,\u0022district_id\u0022:25,\u0022location\u0022:[\u002248.8123499131626\u0022,\u00222.24758102259453\u0022],\u0022level_of_training\u0022:[\u0022middle\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:\u0022\\\/store\\\/1016\\\/passport.jpg\u0022,\u0022certificate\u0022:\u0022\u0022,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:1,\u0022offline_message\u0022:\u0022I am not available for 2 days due to a business trip\u0022,\u0022created_at\u0022:1624817905,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:1,\u0022userLocation\u0022:\u0022POINT(48.8123499131626 2.24758102259453)\u0022,\u0022price\u0022:60,\u0022rate\u0022:\u00224.58\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/1016\\\/profile\u0022,\u0022meeting\u0022:{\u0022id\u0022:35,\u0022creator_id\u0022:1016,\u0022amount\u0022:60,\u0022discount\u0022:null,\u0022in_person\u0022:0,\u0022in_person_amount\u0022:null,\u0022group_meeting\u0022:0,\u0022online_group_min_student\u0022:null,\u0022online_group_max_student\u0022:null,\u0022online_group_amount\u0022:null,\u0022in_person_group_min_student\u0022:null,\u0022in_person_group_max_student\u0022:null,\u0022in_person_group_amount\u0022:null,\u0022disabled\u0022:0,\u0022created_at\u0022:1625941278,\u0022meeting_times_count\u0022:16,\u0022meeting_times\u0022:[{\u0022id\u0022:124,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002209:30AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941315},{\u0022id\u0022:125,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002211:00AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941331},{\u0022id\u0022:126,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002208:00AM-09:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941347},{\u0022id\u0022:127,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002208:00AM-09:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941388},{\u0022id\u0022:128,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002210:00AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941418},{\u0022id\u0022:129,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002205:00PM-06:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941460},{\u0022id\u0022:130,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002208:00PM-09:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941475},{\u0022id\u0022:131,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002208:00AM-09:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941557},{\u0022id\u0022:132,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002209:30AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941580},{\u0022id\u0022:133,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002210:45AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941611},{\u0022id\u0022:134,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002207:30PM-08:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941640},{\u0022id\u0022:135,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002210:00PM-11:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941668},{\u0022id\u0022:136,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002209:00PM-10:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941731},{\u0022id\u0022:137,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002210:15PM-11:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941832},{\u0022id\u0022:138,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002209:00AM-10:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941864},{\u0022id\u0022:139,\u0022meeting_id\u0022:35,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002210:30AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625941879}]},\u0022occupations\u0022:[{\u0022id\u0022:1004,\u0022user_id\u0022:1016,\u0022category_id\u0022:520},{\u0022id\u0022:1005,\u0022user_id\u0022:1016,\u0022category_id\u0022:606},{\u0022id\u0022:1006,\u0022user_id\u0022:1016,\u0022category_id\u0022:607}]},{\u0022id\u0022:1015,\u0022full_name\u0022:\u0022Robert Ransdell\u0022,\u0022role_name\u0022:\u0022teacher\u0022,\u0022organ_id\u0022:867,\u0022mobile\u0022:\u0022+61491170156\u0022,\u0022email\u0022:\u0022instructor@demo.com\u0022,\u0022bio\u0022:\u0022System Administrator at Amazon\u0022,\u0022logged_count\u0022:1,\u0022verified\u0022:1,\u0022financial_approval\u0022:1,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:1,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/1015\\\/avatar\\\/617a4f2fb8a6d.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/1015\\\/6.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022Robert started his career as a Unix and Linux System Engineer in 1999. Since that time he has utilized his Linux skills at companies such as Xerox, UPS, Hewlett-Packard, and Amazon.com. Additionally, he has acted as a technical consultant and independent contractor for small businesses and Fortune 500 companies.\\r\\n\\r\\nRobert has professional experience with CentOS, RedHat Enterprise Linux, SUSE Linux Enterprise Server, and Ubuntu. He has used several Linux distributions on personal projects including Debian, Slackware, CrunchBang, and others. In addition to Linux, Jason has experience supporting proprietary Unix operating systems including AIX, HP-UX, and Solaris.\\r\\n\\r\\nHe enjoys teaching others how to use and exploit the power of the Linux operating system. He is also the author of the books \\\u0022Linux for Beginners\\\u0022 and \\\u0022Command Line Kung Fu.\\\u0022\u0022,\u0022address\u0022:\u0022Al Wakrah ,27904 Hilpert Knoll\u0022,\u0022country_id\u0022:18,\u0022province_id\u0022:46,\u0022city_id\u0022:49,\u0022district_id\u0022:55,\u0022location\u0022:[\u002240.7161108229911\u0022,\u0022-74.0115263531368\u0022],\u0022level_of_training\u0022:[\u0022middle\u0022,\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:\u0022\\\/store\\\/1015\\\/passport.jpg\u0022,\u0022certificate\u0022:\u0022\\\/store\\\/1015\\\/certificate_validation.jpg\u0022,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1624817207,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:1,\u0022userLocation\u0022:\u0022POINT(40.7161108229911 -74.0115263531368)\u0022,\u0022price\u0022:100,\u0022rate\u0022:\u00224.75\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/1015\\\/profile\u0022,\u0022meeting\u0022:{\u0022id\u0022:30,\u0022creator_id\u0022:1015,\u0022amount\u0022:100,\u0022discount\u0022:null,\u0022in_person\u0022:1,\u0022in_person_amount\u0022:250,\u0022group_meeting\u0022:1,\u0022online_group_min_student\u0022:20,\u0022online_group_max_student\u0022:200,\u0022online_group_amount\u0022:50,\u0022in_person_group_min_student\u0022:5,\u0022in_person_group_max_student\u0022:30,\u0022in_person_group_amount\u0022:150,\u0022disabled\u0022:0,\u0022created_at\u0022:1625938321,\u0022meeting_times_count\u0022:20,\u0022meeting_times\u0022:[{\u0022id\u0022:93,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022saturday\u0022,\u0022time\u0022:\u002210:00AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938350},{\u0022id\u0022:94,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022sunday\u0022,\u0022time\u0022:\u002205:00PM-06:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938383},{\u0022id\u0022:95,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022sunday\u0022,\u0022time\u0022:\u002206:30PM-07:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938416},{\u0022id\u0022:96,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002209:45AM-10:15AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938436},{\u0022id\u0022:97,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002211:00AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938462},{\u0022id\u0022:98,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002206:00PM-07:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938497},{\u0022id\u0022:99,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002208:30AM-09:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938517},{\u0022id\u0022:100,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002210:30AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938585},{\u0022id\u0022:101,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002204:50PM-05:50PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938619},{\u0022id\u0022:102,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002206:00PM-07:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938647},{\u0022id\u0022:103,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002208:30PM-09:45PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938681},{\u0022id\u0022:104,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002210:00PM-10:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938700},{\u0022id\u0022:105,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002206:00PM-08:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938755},{\u0022id\u0022:106,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002210:15AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625938776},{\u0022id\u0022:168,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022in_person\u0022,\u0022day_label\u0022:\u0022sunday\u0022,\u0022time\u0022:\u002210:00AM-11:30AM\u0022,\u0022description\u0022:\u0022School Management Workshop.\u0022,\u0022created_at\u0022:1646352499},{\u0022id\u0022:169,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022in_person\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002210:30AM-11:30AM\u0022,\u0022description\u0022:\u0022Risk Management Workshop.\u0022,\u0022created_at\u0022:1646352560},{\u0022id\u0022:170,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022online\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002204:30PM-05:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1646352585},{\u0022id\u0022:171,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022online\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002206:00PM-07:30PM\u0022,\u0022description\u0022:\u0022Risk Management Workshop.\u0022,\u0022created_at\u0022:1646352619},{\u0022id\u0022:172,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022in_person\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002208:00PM-09:30PM\u0022,\u0022description\u0022:\u0022Risk Management Workshop.\u0022,\u0022created_at\u0022:1646352638},{\u0022id\u0022:173,\u0022meeting_id\u0022:30,\u0022meeting_type\u0022:\u0022in_person\u0022,\u0022day_label\u0022:\u0022saturday\u0022,\u0022time\u0022:\u002212:15PM-01:45PM\u0022,\u0022description\u0022:\u0022Risk Management Workshop.\u0022,\u0022created_at\u0022:1646352676}]},\u0022occupations\u0022:[{\u0022id\u0022:1010,\u0022user_id\u0022:1015,\u0022category_id\u0022:609},{\u0022id\u0022:1011,\u0022user_id\u0022:1015,\u0022category_id\u0022:606},{\u0022id\u0022:1012,\u0022user_id\u0022:1015,\u0022category_id\u0022:607}]},{\u0022id\u0022:934,\u0022full_name\u0022:\u0022Linda Anderson\u0022,\u0022role_name\u0022:\u0022teacher\u0022,\u0022organ_id\u0022:4,\u0022mobile\u0022:\u0022+12025550143\u0022,\u0022email\u0022:\u0022Lindaanderson_92@gmail.com\u0022,\u0022bio\u0022:\u0022IT Technician at IBM\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:0,\u0022financial_approval\u0022:1,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/934\\\/avatar\\\/617a4f418be6b.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/934\\\/2.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022I am a programmer with over 12 years\u0027 experience gained in a range of industries, the last 16 with IBM.\\r\\n\\r\\nI am now self employed developing apps for Android; programming in a range of languages including Java, Javascript and Python; and helping the next generation of programmers gain the skills that I have acquired over the years.\\r\\n\\r\\nThe first program I sold controlled stock movement in a warehouse, and ran on a CP\\\/M computer - both the program and operating system lived in the 64 kb (yes, kilobytes) that was all CP\\\/M systems had in those days.\\r\\n\\r\\nI have gained experience in a wide range of industries including Utilities, Retail, Insurance and the Motor Manufacturing industry. My clients and employers have included Northumbrian Water, Arcadia, Royal Sun Alliance, Nissan and Jaguar Landrover. I also worked for Sunderland University for 3 years preparing and delivering training courses in computing.\\r\\n\\r\\nTimes have changed, the challenges are very different to what they were, but programming remains fun!\\r\\n\\r\\nWhen not at my computer, I am often riding my motorbike through the wonderful countryside of the UK and Europe.\u0022,\u0022address\u0022:\u0022OX7 3NH, England, Oxfordshire, Ascott-under-Wychwood\u0022,\u0022country_id\u0022:19,\u0022province_id\u0022:59,\u0022city_id\u0022:60,\u0022district_id\u0022:63,\u0022location\u0022:[\u002212.0933742840385\u0022,\u002215.0818819044672\u0022],\u0022level_of_training\u0022:[\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:\u0022\\\/store\\\/934\\\/passport.jpg\u0022,\u0022certificate\u0022:\u0022\u0022,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1612680476,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:1,\u0022userLocation\u0022:\u0022POINT(12.0933742840385 15.0818819044672)\u0022,\u0022price\u0022:100,\u0022rate\u0022:\u00224.63\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/934\\\/profile\u0022,\u0022meeting\u0022:{\u0022id\u0022:31,\u0022creator_id\u0022:934,\u0022amount\u0022:100,\u0022discount\u0022:null,\u0022in_person\u0022:0,\u0022in_person_amount\u0022:null,\u0022group_meeting\u0022:0,\u0022online_group_min_student\u0022:null,\u0022online_group_max_student\u0022:null,\u0022online_group_amount\u0022:null,\u0022in_person_group_min_student\u0022:null,\u0022in_person_group_max_student\u0022:null,\u0022in_person_group_amount\u0022:null,\u0022disabled\u0022:0,\u0022created_at\u0022:1625939199,\u0022meeting_times_count\u0022:26,\u0022meeting_times\u0022:[{\u0022id\u0022:140,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002208:40AM-09:40AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942014},{\u0022id\u0022:141,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002210:00AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942028},{\u0022id\u0022:142,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002205:00PM-06:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942048},{\u0022id\u0022:143,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002206:45PM-07:45PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942079},{\u0022id\u0022:144,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002208:00PM-09:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942101},{\u0022id\u0022:145,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002210:00PM-10:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942137},{\u0022id\u0022:146,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002208:30AM-09:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942159},{\u0022id\u0022:147,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002210:00AM-11:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942173},{\u0022id\u0022:148,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002206:00PM-07:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942191},{\u0022id\u0022:149,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022saturday\u0022,\u0022time\u0022:\u002209:30AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942210},{\u0022id\u0022:150,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022sunday\u0022,\u0022time\u0022:\u002208:30AM-09:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942229},{\u0022id\u0022:151,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022sunday\u0022,\u0022time\u0022:\u002209:45AM-10:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942247},{\u0022id\u0022:152,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022sunday\u0022,\u0022time\u0022:\u002210:30AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942266},{\u0022id\u0022:153,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022saturday\u0022,\u0022time\u0022:\u002210:45AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942311},{\u0022id\u0022:154,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022sunday\u0022,\u0022time\u0022:\u002205:00PM-06:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942351},{\u0022id\u0022:155,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002208:15AM-09:15AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942379},{\u0022id\u0022:156,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002209:30AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942395},{\u0022id\u0022:157,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002210:45AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942414},{\u0022id\u0022:158,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002207:30AM-08:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942446},{\u0022id\u0022:159,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002208:45AM-09:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942461},{\u0022id\u0022:160,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002210:00AM-11:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942474},{\u0022id\u0022:161,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002205:30PM-07:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942499},{\u0022id\u0022:162,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002209:00AM-10:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942521},{\u0022id\u0022:163,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022friday\u0022,\u0022time\u0022:\u002210:30AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942564},{\u0022id\u0022:164,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002208:00PM-09:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625942840},{\u0022id\u0022:165,\u0022meeting_id\u0022:31,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022saturday\u0022,\u0022time\u0022:\u002206:00PM-07:00PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625943005}]},\u0022occupations\u0022:[{\u0022id\u0022:1039,\u0022user_id\u0022:934,\u0022category_id\u0022:525},{\u0022id\u0022:1040,\u0022user_id\u0022:934,\u0022category_id\u0022:606},{\u0022id\u0022:1041,\u0022user_id\u0022:934,\u0022category_id\u0022:607},{\u0022id\u0022:1042,\u0022user_id\u0022:934,\u0022category_id\u0022:608}]},{\u0022id\u0022:929,\u0022full_name\u0022:\u0022Kate Williams\u0022,\u0022role_name\u0022:\u0022teacher\u0022,\u0022organ_id\u0022:868,\u0022mobile\u0022:\u0022+12025550148\u0022,\u0022email\u0022:\u0022kate.williams.dev@yahoo.com\u0022,\u0022bio\u0022:\u0022Computer Engineer at Oracle\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:0,\u0022financial_approval\u0022:0,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/929\\\/avatar\\\/617a4f5d834c8.png\u0022,\u0022avatar_settings\u0022:\u0022{\\\u0022color\\\u0022:\\\u0022FFFFFF\\\u0022,\\\u0022background\\\u0022:\\\u00228e24aa\\\u0022}\u0022,\u0022cover_img\u0022:\u0022\\\/store\\\/929\\\/15.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022\\\u0022Short courses for busy managers\\\u0022\\r\\n\\r\\nHi there, my name is Kate Williams and I\u0027ve been managing projects and virtual teams for the past 10+ years.\\r\\n\\r\\nI\u0027m currently a Director at Cisco Systems,* where I lead Project and Program Management teams on delivering complex projects for Cisco\u0027s customers.\\r\\n\\r\\nPreviously, I was a manager at Ernst \u0026 Young, where I analyzed failing projects at Fortune 500 companies, and recommended solutions to fix them.  \\r\\n\\r\\nI was also a research assistant at Harvard University, where I studied issues related to virtual teams. \\r\\n\\r\\nI\u0027m an Amazon bestselling author of 4 books about team management (including \\\u0022Influencing Virtual Teams,\\\u0022 \\\u0022Don\u0027t Reply All,\\\u0022 \\\u0022Project Kickoff,\\\u0022 and \\\u0022Effective Delegation of Authority\\\u0022), and I hold the PMP, CSM and ITIL certifications.\\r\\n\\r\\nMost managers don\u0027t have a lot of time to watch lengthy courses (that are usually full of fluff). So I focus on creating short courses that help busy managers become more effective leaders, without wasting their time.\\r\\n\\r\\nI have published courses about Writing Better Emails, Delegating Effectively, Leading Virtual Meetings, and Managing and Influencing Virtual Teams.\u0022,\u0022address\u0022:null,\u0022country_id\u0022:17,\u0022province_id\u0022:27,\u0022city_id\u0022:29,\u0022district_id\u0022:36,\u0022location\u0022:[\u002228.5561791651924\u0022,\u002277.2149246071805\u0022],\u0022level_of_training\u0022:[\u0022middle\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:null,\u0022certificate\u0022:null,\u0022commission\u0022:10,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1605463391,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:1622030241,\u0022meetingCounts\u0022:1,\u0022userLocation\u0022:\u0022POINT(28.5561791651924 77.2149246071805)\u0022,\u0022price\u0022:200,\u0022rate\u0022:\u00223.42\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/929\\\/profile\u0022,\u0022meeting\u0022:{\u0022id\u0022:32,\u0022creator_id\u0022:929,\u0022amount\u0022:200,\u0022discount\u0022:null,\u0022in_person\u0022:1,\u0022in_person_amount\u0022:500,\u0022group_meeting\u0022:0,\u0022online_group_min_student\u0022:null,\u0022online_group_max_student\u0022:null,\u0022online_group_amount\u0022:null,\u0022in_person_group_min_student\u0022:null,\u0022in_person_group_max_student\u0022:null,\u0022in_person_group_amount\u0022:null,\u0022disabled\u0022:0,\u0022created_at\u0022:1625939298,\u0022meeting_times_count\u0022:5,\u0022meeting_times\u0022:[{\u0022id\u0022:107,\u0022meeting_id\u0022:32,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002209:00AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939319},{\u0022id\u0022:108,\u0022meeting_id\u0022:32,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002209:00AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939339},{\u0022id\u0022:109,\u0022meeting_id\u0022:32,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002210:45AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939358},{\u0022id\u0022:110,\u0022meeting_id\u0022:32,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002206:00PM-07:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939384},{\u0022id\u0022:167,\u0022meeting_id\u0022:32,\u0022meeting_type\u0022:\u0022in_person\u0022,\u0022day_label\u0022:\u0022saturday\u0022,\u0022time\u0022:\u002206:30PM-08:30PM\u0022,\u0022description\u0022:\u0022School Management Workshop\u0022,\u0022created_at\u0022:1646352258}]},\u0022occupations\u0022:[{\u0022id\u0022:1027,\u0022user_id\u0022:929,\u0022category_id\u0022:604},{\u0022id\u0022:1028,\u0022user_id\u0022:929,\u0022category_id\u0022:525},{\u0022id\u0022:1029,\u0022user_id\u0022:929,\u0022category_id\u0022:609},{\u0022id\u0022:1030,\u0022user_id\u0022:929,\u0022category_id\u0022:610},{\u0022id\u0022:1031,\u0022user_id\u0022:929,\u0022category_id\u0022:611}]},{\u0022id\u0022:870,\u0022full_name\u0022:\u0022Jessica Wray\u0022,\u0022role_name\u0022:\u0022teacher\u0022,\u0022organ_id\u0022:863,\u0022mobile\u0022:\u0022+12025550188\u0022,\u0022email\u0022:\u0022marques.torp@hotmail.com\u0022,\u0022bio\u0022:\u0022Network Technician at Cisco\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:1,\u0022financial_approval\u0022:1,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/870\\\/avatar\\\/617a4f7c09d61.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/870\\\/16.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022Hi,\\r\\n\\r\\nI\\u2019m a certified coach and author. Over the years I\u0027ve worked with and coached 100,000 students from all over the world.\\r\\nMy expertise includes science-based personal development, health \u0026 fitness advice in the following areas:\\r\\n- Self Improvement\\r\\n- Life Coaching\\r\\n- Stress Management\\r\\n- Muscle Growth \u0026 Fat Loss\\r\\n- Healthy Living \u0026 Meal Planning\\r\\n- Gym Workouts \u0026 Bodybuilding\\r\\n\\r\\nPersonal Development doesn\u0027t have to be difficult!\\r\\nWhat you need are the right strategies and a few simple - but crucial - tips on how to get started and stay motivated. That\u0027s what I teach in my courses, on my blog and in my books.\u0022,\u0022address\u0022:null,\u0022country_id\u0022:16,\u0022province_id\u0022:22,\u0022city_id\u0022:23,\u0022district_id\u0022:26,\u0022location\u0022:[\u002248.8525914381802\u0022,\u00222.39911493026148\u0022],\u0022level_of_training\u0022:[\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:null,\u0022certificate\u0022:null,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1604509713,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:1,\u0022userLocation\u0022:\u0022POINT(48.8525914381802 2.39911493026148)\u0022,\u0022price\u0022:100,\u0022rate\u0022:\u00225.00\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/870\\\/profile\u0022,\u0022meeting\u0022:{\u0022id\u0022:33,\u0022creator_id\u0022:870,\u0022amount\u0022:100,\u0022discount\u0022:null,\u0022in_person\u0022:1,\u0022in_person_amount\u0022:200,\u0022group_meeting\u0022:1,\u0022online_group_min_student\u0022:20,\u0022online_group_max_student\u0022:100,\u0022online_group_amount\u0022:80,\u0022in_person_group_min_student\u0022:5,\u0022in_person_group_max_student\u0022:30,\u0022in_person_group_amount\u0022:150,\u0022disabled\u0022:0,\u0022created_at\u0022:1625939436,\u0022meeting_times_count\u0022:6,\u0022meeting_times\u0022:[{\u0022id\u0022:111,\u0022meeting_id\u0022:33,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002208:00AM-09:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939462},{\u0022id\u0022:112,\u0022meeting_id\u0022:33,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002208:30AM-09:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939477},{\u0022id\u0022:113,\u0022meeting_id\u0022:33,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002210:30AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939493},{\u0022id\u0022:114,\u0022meeting_id\u0022:33,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002208:00AM-09:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939508},{\u0022id\u0022:115,\u0022meeting_id\u0022:33,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002209:30AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939527},{\u0022id\u0022:116,\u0022meeting_id\u0022:33,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002210:30AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939551}]},\u0022occupations\u0022:[{\u0022id\u0022:1032,\u0022user_id\u0022:870,\u0022category_id\u0022:523},{\u0022id\u0022:1033,\u0022user_id\u0022:870,\u0022category_id\u0022:604}]},{\u0022id\u0022:3,\u0022full_name\u0022:\u0022James Kong\u0022,\u0022role_name\u0022:\u0022teacher\u0022,\u0022organ_id\u0022:864,\u0022mobile\u0022:\u0022+12085141324\u0022,\u0022email\u0022:\u0022Jameskong2021@gmail.com\u0022,\u0022bio\u0022:\u0022Master Certified Coach\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:0,\u0022financial_approval\u0022:1,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/3\\\/avatar\\\/617a4fad7845b.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/3\\\/17.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022James Kong is a sound and communication expert. His vision is for a world that listens consciously and speaks powerfully.\\r\\n\\r\\nJulian is author of the books How to be Heard: Secrets for Powerful Speaking and Listening and Sound Business. \\r\\n\\r\\nHis five TED talks about sound and communication have been watched over 90 million times and his latest talk, How to speak so that people want to listen, is the sixth most watched TED talk of all time. \\r\\n\\r\\nJames is a media commentator on speaking and listening skills, and has been featured by the likes of TIME Magazine, The Economist, The BBC, and The Times. \\r\\n\\r\\nJames\u0027s company, The Sound Agency, works with major brands worldwide to improve the way they sound. Their pioneering methods have improved customer happiness, raised sales, and even lowered crime rates, and their work has made headlines internationally.\u0022,\u0022address\u0022:\u0022638153, Tamil Nadu, Modakkurichi, Elumathur\u0022,\u0022country_id\u0022:20,\u0022province_id\u0022:33,\u0022city_id\u0022:34,\u0022district_id\u0022:42,\u0022location\u0022:[\u002224.643516369262\u0022,\u002246.6575362831465\u0022],\u0022level_of_training\u0022:[\u0022middle\u0022,\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:\u0022\\\/store\\\/3\\\/passport.jpg\u0022,\u0022certificate\u0022:\u0022\u0022,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:1,\u0022offline_message\u0022:\u0022I will not be available for 2 weeks until  end of January due to a business trip.\u0022,\u0022created_at\u0022:1597826952,\u0022updated_at\u0022:1597826952,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:1,\u0022userLocation\u0022:\u0022POINT(24.643516369262 46.6575362831465)\u0022,\u0022price\u0022:50,\u0022rate\u0022:\u00223.88\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/3\\\/profile\u0022,\u0022meeting\u0022:{\u0022id\u0022:34,\u0022creator_id\u0022:3,\u0022amount\u0022:50,\u0022discount\u0022:null,\u0022in_person\u0022:0,\u0022in_person_amount\u0022:null,\u0022group_meeting\u0022:0,\u0022online_group_min_student\u0022:null,\u0022online_group_max_student\u0022:null,\u0022online_group_amount\u0022:null,\u0022in_person_group_min_student\u0022:null,\u0022in_person_group_max_student\u0022:null,\u0022in_person_group_amount\u0022:null,\u0022disabled\u0022:1,\u0022created_at\u0022:1625939607,\u0022meeting_times_count\u0022:7,\u0022meeting_times\u0022:[{\u0022id\u0022:117,\u0022meeting_id\u0022:34,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002209:30AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939631},{\u0022id\u0022:118,\u0022meeting_id\u0022:34,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022tuesday\u0022,\u0022time\u0022:\u002209:30AM-10:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939646},{\u0022id\u0022:119,\u0022meeting_id\u0022:34,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022monday\u0022,\u0022time\u0022:\u002210:45AM-11:45AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939660},{\u0022id\u0022:120,\u0022meeting_id\u0022:34,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002208:00AM-10:00AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939678},{\u0022id\u0022:121,\u0022meeting_id\u0022:34,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002210:30AM-11:30AM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939700},{\u0022id\u0022:122,\u0022meeting_id\u0022:34,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022wednesday\u0022,\u0022time\u0022:\u002205:00PM-06:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939744},{\u0022id\u0022:123,\u0022meeting_id\u0022:34,\u0022meeting_type\u0022:\u0022all\u0022,\u0022day_label\u0022:\u0022thursday\u0022,\u0022time\u0022:\u002208:00PM-09:30PM\u0022,\u0022description\u0022:null,\u0022created_at\u0022:1625939763}]},\u0022occupations\u0022:[{\u0022id\u0022:1034,\u0022user_id\u0022:3,\u0022category_id\u0022:602},{\u0022id\u0022:1035,\u0022user_id\u0022:3,\u0022category_id\u0022:525},{\u0022id\u0022:1036,\u0022user_id\u0022:3,\u0022category_id\u0022:609},{\u0022id\u0022:1037,\u0022user_id\u0022:3,\u0022category_id\u0022:611},{\u0022id\u0022:1038,\u0022user_id\u0022:3,\u0022category_id\u0022:606}]},{\u0022id\u0022:867,\u0022full_name\u0022:\u0022Light Moon\u0022,\u0022role_name\u0022:\u0022organization\u0022,\u0022organ_id\u0022:null,\u0022mobile\u0022:\u0022+12025550151\u0022,\u0022email\u0022:\u0022organization@demo.com\u0022,\u0022bio\u0022:\u0022Building Better Professionals\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:1,\u0022financial_approval\u0022:1,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/867\\\/avatar\\\/617a502cf268a.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/867\\\/18.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022The Light Moon Academy was created by Tim Buchalka, a software developer with 35 years experience, who is also an instructor on Udemy, with over 1.22M+ students in his courses on Java, Python, Android, C#  and the Spring framework. \\r\\n\\r\\nThe Academy\\u2019s goal in the next three years, is to teach one million people to learn how to program.\\r\\n\\r\\nApart from Tim\\u2019s own courses, which are all available here, we are working with the very best teachers, creating courses to teach the essential skills required by developers, at all levels.\\r\\n\\r\\nOne other important philosophy is that our courses are taught by real professionals; software developers with real and substantial experience in the industry, who are also great teachers.  All our instructors are experienced, software developers!\\r\\n\\r\\nOur team is busy creating new courses right now.\\r\\n\\r\\nWhether you are a beginner, looking to learn how to program for the very first time, or to brush up on your existing skills, or to learn new languages and frameworks, the Academy has you covered.\u0022,\u0022address\u0022:\u0022Massachusetts, West Roxbury, 3979 Smith Street\u0022,\u0022country_id\u0022:16,\u0022province_id\u0022:21,\u0022city_id\u0022:67,\u0022district_id\u0022:68,\u0022location\u0022:[\u002248.1133483367843\u0022,\u0022-1.70754716561707\u0022],\u0022level_of_training\u0022:[\u0022middle\u0022,\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:\u0022\\\/store\\\/867\\\/passport.jpg\u0022,\u0022certificate\u0022:\u0022\u0022,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1604509713,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:0,\u0022userLocation\u0022:\u0022POINT(48.1133483367843 -1.70754716561707)\u0022,\u0022price\u0022:0,\u0022rate\u0022:\u00225.00\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/867\\\/profile\u0022,\u0022meeting\u0022:null,\u0022occupations\u0022:[{\u0022id\u0022:1016,\u0022user_id\u0022:867,\u0022category_id\u0022:520},{\u0022id\u0022:1017,\u0022user_id\u0022:867,\u0022category_id\u0022:525},{\u0022id\u0022:1018,\u0022user_id\u0022:867,\u0022category_id\u0022:611},{\u0022id\u0022:1019,\u0022user_id\u0022:867,\u0022category_id\u0022:606},{\u0022id\u0022:1020,\u0022user_id\u0022:867,\u0022category_id\u0022:607},{\u0022id\u0022:1021,\u0022user_id\u0022:867,\u0022category_id\u0022:608}]},{\u0022id\u0022:864,\u0022full_name\u0022:\u0022Affogato Media\u0022,\u0022role_name\u0022:\u0022organization\u0022,\u0022organ_id\u0022:null,\u0022mobile\u0022:\u0022+12025550131\u0022,\u0022email\u0022:\u0022affogato@yahoo.com\u0022,\u0022bio\u0022:\u0022Learn Creative Skills\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:0,\u0022financial_approval\u0022:0,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/864\\\/avatar\\\/617a5011ca3ba.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/864\\\/20.jpg\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022Learn creative skills, from absolute beginner to advanced mastery. \\r\\n\\r\\nVideo School exists to help you succeed in life. Each course has been hand-tailored to teach a specific skill from photography and video to art, design and business.\\r\\n\\r\\nWhether you\\u2019re trying to learn a new skill from scratch, or want to refresh your memory on something you\\u2019ve learned in the past, you\\u2019ve come to the right place.\\r\\n\\r\\nEducation makes the world a better place. Make your world better with new skills!\\r\\n\\r\\nOur courses can be watched 24\\\/7 wherever you are. Most are fully downloadable so you can take them with you.\\r\\n\\r\\nAll courses have a 30-day money-back guarantee so that you can check it out, make sure it\\u2019s the right course for you, and get a refund if it\\u2019s not!\u0022,\u0022address\u0022:null,\u0022country_id\u0022:19,\u0022province_id\u0022:61,\u0022city_id\u0022:62,\u0022district_id\u0022:65,\u0022location\u0022:[\u00228.57440130671175\u0022,\u002216.0714316236417\u0022],\u0022level_of_training\u0022:[\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:null,\u0022certificate\u0022:null,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1604509713,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:0,\u0022userLocation\u0022:\u0022POINT(8.57440130671175 16.0714316236417)\u0022,\u0022price\u0022:0,\u0022rate\u0022:\u00225.00\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/864\\\/profile\u0022,\u0022meeting\u0022:null,\u0022occupations\u0022:[{\u0022id\u0022:1055,\u0022user_id\u0022:864,\u0022category_id\u0022:520},{\u0022id\u0022:1056,\u0022user_id\u0022:864,\u0022category_id\u0022:601},{\u0022id\u0022:1057,\u0022user_id\u0022:864,\u0022category_id\u0022:602},{\u0022id\u0022:1058,\u0022user_id\u0022:864,\u0022category_id\u0022:603}]},{\u0022id\u0022:863,\u0022full_name\u0022:\u0022Owosso\u0022,\u0022role_name\u0022:\u0022organization\u0022,\u0022organ_id\u0022:null,\u0022mobile\u0022:\u0022+12025550198\u0022,\u0022email\u0022:\u0022owosso@info.com\u0022,\u0022bio\u0022:\u0022Chemical Engineering Institute\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:0,\u0022financial_approval\u0022:0,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/863\\\/avatar\\\/617a5000eb040.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/863\\\/2.png\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022Dear students,\\r\\n\\r\\nWR Training is a group of professional engineers from various disciplines (chemical, petrochemical, mechanical, electrical\\u2026) providing academic and industrial online courses.\\r\\n\\r\\nWhether you\\u2019re trying to learn and discover a new scientific or engineering topic from scratch, or want to refresh your memory on something you\\u2019ve learnt in the past, you\\u2019ve come to the right place.\\r\\n\\r\\nWR Training exists to help you succeed in your academic and professional life. Our goal is to spread the knowledge and promote science.\\r\\n\\r\\nThe courses, you are about to enroll in, were undertaken to give you a clear view of scientific and engineering topics through detailed examples using hands on demo and provide numerous problems with their solutions. You can also use these courses as a review for taking exams or as a vehicle for self-instruction.\\r\\n\\r\\nOur training methodology was designed to enable individual self paced e-learning.\\r\\n\\r\\nEach course has been undertaken to teach a specific skill.\\r\\n\\r\\nOur courses can be watched 24\\\/7 wherever you are. You can also view them on mobile devices with the Udemy mobile app.\\r\\n\\r\\nWe are active online instructors and we will be here for you every step of the way. If you have questions about the course content, you can always post your questions or send us a private message. It will be our pleasure to provide assistance and answer your questions.\\r\\n\\r\\nSo with no further ado, go ahead, select the course suitable for you, click the enroll button and we\u0027ll see you in the first section !\\r\\n\\r\\nWR Training\\r\\n\\r\\nSpread the wings of your knowledge\u0022,\u0022address\u0022:null,\u0022country_id\u0022:17,\u0022province_id\u0022:28,\u0022city_id\u0022:30,\u0022district_id\u0022:37,\u0022location\u0022:[\u002218.967571186446\u0022,\u002272.8258094243416\u0022],\u0022level_of_training\u0022:[\u0022middle\u0022,\u0022expert\u0022],\u0022meeting_type\u0022:\u0022online\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:null,\u0022certificate\u0022:null,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1604509713,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:0,\u0022userLocation\u0022:\u0022POINT(18.967571186446 72.8258094243416)\u0022,\u0022price\u0022:0,\u0022rate\u0022:\u00225.00\u0022,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/863\\\/profile\u0022,\u0022meeting\u0022:null,\u0022occupations\u0022:[{\u0022id\u0022:1050,\u0022user_id\u0022:863,\u0022category_id\u0022:601},{\u0022id\u0022:1051,\u0022user_id\u0022:863,\u0022category_id\u0022:602},{\u0022id\u0022:1052,\u0022user_id\u0022:863,\u0022category_id\u0022:603},{\u0022id\u0022:1053,\u0022user_id\u0022:863,\u0022category_id\u0022:609},{\u0022id\u0022:1054,\u0022user_id\u0022:863,\u0022category_id\u0022:611}]},{\u0022id\u0022:859,\u0022full_name\u0022:\u0022Cactuscat Clothing\u0022,\u0022role_name\u0022:\u0022organization\u0022,\u0022organ_id\u0022:null,\u0022mobile\u0022:\u0022+12025550132\u0022,\u0022email\u0022:\u0022cactuscat@hotmail.com\u0022,\u0022bio\u0022:\u0022Programming Training Institute\u0022,\u0022logged_count\u0022:0,\u0022verified\u0022:0,\u0022financial_approval\u0022:0,\u0022installment_approval\u0022:0,\u0022enable_installments\u0022:1,\u0022disable_cashback\u0022:0,\u0022enable_registration_bonus\u0022:0,\u0022registration_bonus_amount\u0022:null,\u0022avatar\u0022:\u0022\\\/store\\\/859\\\/avatar\\\/617a4fcf7ac48.png\u0022,\u0022avatar_settings\u0022:null,\u0022cover_img\u0022:\u0022\\\/store\\\/859\\\/8.png\u0022,\u0022headline\u0022:null,\u0022about\u0022:\u0022Eduonix creates and distributes high quality technology training content. Our team of  industry professionals have been training manpower for more than a decade. We aim to teach technology the way it is used in industry and professional world.  We have professional team of trainers for technologies ranging from Mobility, Web to Enterprise and Database and Server Administration.\u0022,\u0022address\u0022:\u0022\u0022,\u0022country_id\u0022:20,\u0022province_id\u0022:31,\u0022city_id\u0022:32,\u0022district_id\u0022:40,\u0022location\u0022:[\u002224.4817783459103\u0022,\u002239.5948390276255\u0022],\u0022level_of_training\u0022:[\u0022beginner\u0022,\u0022middle\u0022,\u0022expert\u0022],\u0022meeting_type\u0022:\u0022all\u0022,\u0022status\u0022:\u0022active\u0022,\u0022access_content\u0022:1,\u0022language\u0022:\u0022EN\u0022,\u0022currency\u0022:null,\u0022timezone\u0022:\u0022America\\\/New_York\u0022,\u0022newsletter\u0022:0,\u0022public_message\u0022:0,\u0022identity_scan\u0022:\u0022\\\/store\\\/859\\\/certificate.jpg\u0022,\u0022certificate\u0022:\u0022\\\/store\\\/859\\\/certificate.jpg\u0022,\u0022commission\u0022:null,\u0022affiliate\u0022:1,\u0022can_create_store\u0022:0,\u0022ban\u0022:0,\u0022ban_start_at\u0022:null,\u0022ban_end_at\u0022:null,\u0022offline\u0022:0,\u0022offline_message\u0022:null,\u0022created_at\u0022:1604509713,\u0022updated_at\u0022:null,\u0022deleted_at\u0022:null,\u0022meetingCounts\u0022:0,\u0022userLocation\u0022:\u0022POINT(24.4817783459103 39.5948390276255)\u0022,\u0022price\u0022:0,\u0022rate\u0022:0,\u0022profileUrl\u0022:\u0022https:\\\/\\\/edygrad.com\\\/users\\\/859\\\/profile\u0022,\u0022meeting\u0022:null,\u0022occupations\u0022:[{\u0022id\u0022:1067,\u0022user_id\u0022:859,\u0022category_id\u0022:520},{\u0022id\u0022:1068,\u0022user_id\u0022:859,\u0022category_id\u0022:601},{\u0022id\u0022:1069,\u0022user_id\u0022:859,\u0022category_id\u0022:604},{\u0022id\u0022:1070,\u0022user_id\u0022:859,\u0022category_id\u0022:611}]}]");
+        var selectProvinceLang = 'Select Province';
+        var selectCityLang = 'Select City';
+        var selectDistrictLang = 'Select District';
+    </script>
+
+    <script src="assets/default/js/parts/get-regions.min.js"></script>
+    <script src="assets/default/js/parts/instructor-finder-wizard.min.js"></script>
+    <script src="assets/default/js/parts/instructors.min.js"></script>
+
+    <script src="assets/default/js/parts/instructor-finder.min.js"></script>
+    <link href="assets/default/vendors/flagstrap/css/flags.css" rel="stylesheet">
+    <script src="assets/default/vendors/flagstrap/js/jquery.flagstrap.min.js"></script>
+    <script src="assets/default/js/parts/top_nav_flags.min.js"></script>
+    <script src="assets/default/js/parts/navbar.min.js"></script>
+
+<script src="assets/default/js/parts/main.min.js"></script>
+
+<script>
+    
+    
+</script>
+</body>
+
+<!-- Mirrored from edygrad.com/instructor-finder by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2023 05:16:45 GMT -->
+</html>
