@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LANDAPP</title>
+  <title>Edygrad</title>
+   <!-- Customized Bootstrap Stylesheet -->
+   <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
+
+   <!-- Template Stylesheet -->
+   <!--link href="css/style.css" rel="stylesheet"-->
   <!-- -------- anime css ------ -->
   <link rel="stylesheet" href="assets/css/animate.css">
   <!-- --------- tiny slider css ------ -->
@@ -26,70 +31,94 @@
   <!-- --------- preloader ------------ -->
   <div class="preloader">
     <div class="loader">
+        
       <div class="spinner">
+        <span>.....................Edygrad</span>
         <div class="spinner-container">
+            
           <div class="spinner-rotator">
+            <span>  </span>
             <div class="spinner-left">
-              <div class="spinner-circle"></div>
+                <span>  </span>
+              <div class="spinner-circle"><span>  </span></div>
+              <span>  </span>
+              
             </div>
+            
             <div class="spinner-right">
+                
               <div class="spinner-circle"></div>
             </div>
           </div>
         </div>
+        <span>.....................Loading</span>
       </div>
+      
     </div>
+   
   </div>
 
 
 
   <!-------   Header star ------>
   <header class="header-area">
-    <div class="navbar-area">
-      <!---- navbar star--->
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img class="image" src="assets/img/header/logo/landapp-logo.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" data-scroll-nav="0" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-scroll-nav="2" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-scroll-nav="3" href="#">Testimonial</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-scroll-nav="4" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-scroll-nav="5" href="#">FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-scroll-nav="6" href="#">Download</a>
-                </li>
-
-
-              </ul>
-
+    <div class="header-container">
+        <div class="logo">
+          <a href="#" class="logo-link">EdyGrad</a>
+        </div>
+        <nav class="nav" id="nav-menu">
+          <ion-icon
+            name="close-outline"
+            class="header-close"
+            id="close-menu"
+          ></ion-icon>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#students" class="nav-link active" id="students-link"
+                >Students</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#teachers" class="nav-link" id="teachers-link"
+                >For Teachers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#business" class="nav-link" id="business-link"
+                >For Business</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#colleges" class="nav-link" id="colleges-link"
+                >For Colleges</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#ehub" class="nav-link" id="ehub-link">For E-hub</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutus" class="nav-link" id="aboutus-link"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#help" class="nav-link" id="help-link">Help</a>
+            </li>
+            <div class="search-icon-container">
+              <ion-icon name="search-outline" class="search"></ion-icon>
             </div>
+          </ul>
+          <div class="btn-container">
+            <a href="#" class="btn btn-primary">Talk to us</a>
+            <a href="#" class="btn btn-secondary">Get Stated</a>
           </div>
         </nav>
+        <ion-icon
+          name="menu-outline"
+          class="header-toggle"
+          id="toggle-menu"
+        ></ion-icon>
       </div>
-    </div>
     <!---- navbar end--->
     <div class="header-hero" data-scroll-index="0">
       <!---- home star ------>
@@ -103,21 +132,19 @@
         <div class="row align-items-center justify-content-center justify-content-lg-between">
           <div class="col-lg-6 col-md-10">
             <div class="header-hero-content">
-              <h1 class="header-title wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.2s"><span>Launch Your
-                  App</span> With Confidence and Creative</h1>
-              <p class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">Lorem ipsum dolor sit amet
+              <h1 class="header-title wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.2s"><span>WELCOME TO THE</span> EDYGRAD ECOSYSTEM</h1>
+              <!--p class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Aspernatur fugiat qui tenetur sit vero delectus vitae suscipit nostrum
-                aliquam exercitationem necessitatibus veniam placeat, voluptatibus harum.</p>
+                aliquam exercitationem necessitatibus veniam placeat, voluptatibus harum.</p-->
               <ul class="d-flex">
-                <li><a href="" class="main-btn wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.8s">Download
-                    Now</a></li>
-                <li><a href="https://www.youtube.com/watch?v=DxHYso7lDlg" class="header-video venobox wow fadeInLeftBig"
+                <li><a href="" class="main-btn wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.8s">Get Started</a></li>
+                <li><a href="#" class="header-video venobox wow fadeInLeftBig"
                     data-autoplay="true" data-vbtype="video" data-wow-duration="3s" data-wow-delay="1.2s"><i
                       class="fas fa-play"></i></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-4">
             <div class="header-image">
               <img src="assets/img/header/header-app.png" alt="" class="image-1  wow fadeInRightBig"
                 data-wow-duration="3s" data-wow-delay="0.5s">
@@ -135,63 +162,51 @@
     <!---- home star ------>
   </header>
   <!--------   Header End ----  -->
-
-  <!-- ------- Feature Section Start ---------- -->
-  <section class="feature-section pt-80" data-scroll-index="1">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-6 col-lg-7">
-          <div class="section-title text-center mb-30">
-            <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s">Awsome <span> Features</span></h1>
-            <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis error enim perspiciatis iste dignissimos tempore?</p>
-          </div>
+  <div class="for-student-container align-items-center" >
+    <div class="for-img-container align-items-center">
+      <img class="student-image" src="assets/images/student.png" alt="students" />
+    </div>
+    <div class="student-desc-container">
+      <div class="student-desc">
+        <h3>ECOSYSTEM FOR STUDENTS</h3>
+        <p>
+          We provide a wide variety of programs, services, and products
+          where students can learn either online or offline. Our goal is to
+          build a Student Ecosystem that covers all aspects of a student's
+          career, right from their academic career to their career choice.
+        </p>
+        <div class="student-link">
+          <a href="#" class="btn btn-secondary">Get Stated</a>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-4">
-          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
-            <div class="icon color-1">
-              <i class="fas fa-hand-pointer"></i>
-            </div>
-            <div class="content">
-              <h3>Easy To Use</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus sequi pariatur qui ut dolore excepturi!
-              </p>
-            </div>
-          </div>
+      <div class="rank-container">
+        <div class="rank">
+          <h4>500+</h4>
+          <small>Classes</small>
         </div>
-        <div class="col-lg-4">
-          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.4s">
-            <div class="icon color-2">
-              <i class="fas fa-hand-holding-usd"></i>
-            </div>
-            <div class="content">
-              <h3>Save Your Mony</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus sequi pariatur qui ut dolore excepturi!
-              </p>
-            </div>
-          </div>
+        <div class="rank">
+          <h4>5K+</h4>
+          <small>Member</small>
         </div>
-        <div class="col-lg-4">
-          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
-            <div class="icon color-3">
-              <i class="fas fa-stethoscope"></i>
-            </div>
-            <div class="content">
-              <h3>Fully Responsive</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus sequi pariatur qui ut dolore excepturi!
-              </p>
-            </div>
-          </div>
+        <div class="rank">
+          <h4>105+</h4>
+          <small>Teachers</small>
+        </div>
+        <div class="rank">
+          <h4>
+            4.8 <ion-icon name="star-outline" class="star"></ion-icon
+            ><ion-icon name="star-outline" class="star"></ion-icon
+            ><ion-icon name="star-outline" class="star"></ion-icon
+            ><ion-icon name="star-outline" class="star"></ion-icon
+            ><ion-icon name="star-outline" class="star"></ion-icon>
+          </h4>
+          <small>Rating</small>
         </div>
       </div>
     </div>
-  </section>
-  <!-- ------- Feature Section End ---------- -->
-
-  <!-- ----------- About Section Start --------- -->
-  <section class="about-area pt-70 pb-120" data-scroll-index="2">
+  </div>
+<!-- ----------- About Section Start --------- -->
+<section class="about-area pt-70 pb-120" data-scroll-index="2">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
@@ -203,12 +218,37 @@
         <div class="col-lg-6">
           <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.5s">
             <div class="section-title">
-              <h1 class="title">Comes With All You Neede</h1>
-              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis aperiam tenetur
-                aspernatur. Dolor nostrum hic impedit cupiditate iure beatae doloribus, obcaecati deleniti dignissimos
-                in?</p>
+              <h1 class="title" id="ehub">COLLABORATIVE PRACTICAL LEARNING</h1>
+              <p class="text">"Experience dynamic educational growth through our innovative approach to                 Collaborative Practical Learning, where students actively engage in
+                 hands-on experiences, teamwork, and real-world applications to foster holistic development."</p>
+                <div class="learning">
+                    <i class="fa fa-check-circle" style="font-size:15px;color:red"></i>
+                    
+                    <span>Builds a strong professional network</span>
+                  </div>
+                  <div class="learning">
+                    <i class="fa fa-check-circle" style="font-size:15px;color:red"></i>
+                    
+                    <span>Learning with live projects</span>
+                  </div>
+                  <div class="learning">
+                    <i class="fa fa-check-circle" style="font-size:15px;color:red"></i>
+                    
+                    <span>Personalized learning</span>
+                  </div>
+                  <div class="learning">
+                    <i class="fa fa-check-circle" style="font-size:15px;color:red"></i>
+                    
+                    <span>Diverse range of learning resources</span>
+                  </div>
+                   <div class="learning">
+                    <i class="fa fa-check-circle" style="font-size:15px;color:red"></i>
+                    
+                    <span>Collaborative learning with industry expert</span>
+                    <br><br>
+                  </div>
             </div>
-            <a href="" class="main-btn">Get The App</a>
+            <a href="" class="main-btn">Take a STEP into Ecosystem with Us</a>
           </div>
         </div>
       </div>
@@ -216,158 +256,374 @@
   </section>
   <!-- ----------- About Section End --------- -->
 
-  <!-- ----------- Testimonial Section Start ------- -->
-  <section class="testimonial-section" data-scroll-index="3">
-    <div class="container">
-      <div class="row justify-content-center testimonial-active-wrapper">
+  <!-- ------- Feature Section Start ---------- -->
+  <section class="feature-section pt-80" data-scroll-index="1">
+    <div class="container" >
+      <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-7">
-          <div class="section-title text-center mb-60">
-            <h1 class="mb-25 text-white wow fadeInUp" data-wow-delay=".2s">What Oure Client Says</h1>
-            <p class="text-white wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ipsum, repudiandae pariatur deserunt explicabo repellat voluptatibus.</p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-7 col-lg-8">
-            <div class="testimonial-active">
-              <div class="testimonial-wrapper">
-                <div class="single-testimonial">
-                  <div class="info">
-                    <div class="image-2">
-                      <img src="assets/img/testemonial/test-1.jpg" alt="">
-                    </div>
-                    <h4>John Deo</h4>
-                    <p>roduct Design</p>
-                    <div class="quote">
-                      <i class="fas fa-quote-right"></i>
-                    </div>
-                    <div class="content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae officia minus
-                        voluptatibus veritatis unde, asperiores laboriosam tempore voluptates debitis.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-wrapper">
-                <div class="single-testimonial">
-                  <div class="info">
-                    <div class="image-2">
-                      <img src="assets/img/testemonial/test-2.jpg" alt="">
-                    </div>
-                    <h4>John Deo</h4>
-                    <p>roduct Design</p>
-                    <div class="quote">
-                      <i class="fas fa-quote-right"></i>
-                    </div>
-                    <div class="content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae officia minus
-                        voluptatibus veritatis unde, asperiores laboriosam tempore voluptates debitis.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="section-title text-center mb-30">
+            <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s" id="students">Choose your  <span> Expertise</span></h1>
+            <p class="wow fadeInUp" data-wow-delay=".4s">At Edygrad, we're here to support you in choosing a path and navigating the way. <br> Embark on your journey towards your dreams - simply choose a path, and let us guide you every step of the way to make your aspirations a reality.</p>
           </div>
         </div>
       </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+            <div class="icon color-1">
+              <i class="fas fa-hand-pointer"></i>
+            </div>
+            <div class="content">
+              <h3>Blockchain & Web3</h3>
+              <p>25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.4s">
+            <div class="icon color-2">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="content">
+              <h3>Research & Project</h3>
+              <p>6 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
+            <div class="icon color-3">
+              <i class="fas fa-badge-dollar"></i>
+            </div>
+            <div class="content">
+              <h3>Business..</h3>
+              <p>100 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+            <div class="icon color-2">
+              <i class="fas fa-file-chart-line"></i>
+            </div>
+            <div class="content">
+              <h3>Data Science</h3>
+              <p>25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.4s">
+            <div class="icon color-5">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <div class="content">
+              <h3>Personal Development</h3>
+              <p>6 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
+            <div class="icon color-6">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <div class="content">
+              <h3>Computer Science </h3>
+              <p>60 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="" class="main-btn">further enquiries.....</a>
+    </div>
   </section>
-  <!-- ----------- Testimonial Section End ------- -->
-
-  <!-- ------------ pricing section start --------- -->
-  <div class="pricing-area pt-110" data-scroll-index="4">
+    <!-- Select path Start -->
+<div class="container-xxl service py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="xol-xl-6 col-lg-7">
-          <div class="section-title text-center pb-30">
-            <h1 class="wow fadeInUp" data-wow-delay=".2s">Choose <span> a plan</span></h1>
-            <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestias aut maxime repellendus inventore animi laboriosam.</p>
-          </div>
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
+            <h1 class="display-5 mb-5" id="colleges">Choose a Path</h1>
         </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-7 col-sm-9">
-          <div class="single-pricing text-center wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
-            <div class="pricing-title">
-              <h4 class="title">Basic</h4>
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4">
+                <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Certification Courses</h5>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Placement Guarantee Courses</h5>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Research and Project Guide</h5>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>International Exploration</h5>
+                    </button>
+                </div>
             </div>
-            <div class="pricing-price">
-              <span class="pricing">$ 49</span>
-              <p class="text">Month</p>
+            <div class="col-lg-8">
+                <div class="tab-content w-100">
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute rounded w-100 h-100" src="assets/img/service-1.jpg"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-4">Why choose our Certification Courses</h3>
+                                <p class="mb-4">Unlock a world of possibilities with Edygrad's exceptional Certification Courses designed to empower students like never before. Our meticulously crafted courses are more than just learning experiences; they are gateways to success, tailored to.....</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Licenced Certification</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>International Accreditation</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Earn While you Enrol</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute rounded w-100 h-100" src="assets/img/service-2.jpg"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-4">Why Enroll for our Placement Drive</h3>
+                                <p class="mb-4">Supercharge your career prospects through Edygrad's Placement Drive. Gain access to top companies, personalized grooming, and interview preparation, ensuring you stand out in the competitive job market. Elevate your future – join now and step confidently into a world of opportunities....</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Land your dream Career</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Learn with hands-on project</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Meet different expertice</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute rounded w-100 h-100" src="assets/img/service-3.jpg"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-4">Why join our Research and Project Guide top notch</h3>
+                                <p class="mb-4">Elevate your academic journey with Edygrad's Research and Project Guidance Course. Gain access to expert mentorship, cutting-edge resources, and personalized support to excel in your research endeavors.
+                                </p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Industrial Project</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Experience acquisition.</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>DIY on the Learn scheme</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-4">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute rounded w-100 h-100" src="assets/img/service-4.jpg"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-4">Our E-Hub "Discover the Benefits of Our Educational Ecosystem:".</h3>
+                                <p class="mb-4">Enroll in our educational ecosystem today and embark on a transformative journey that sets the stage for your success in the dynamic world ahead.</p>
+
+                                <p><i class="fa fa-check text-primary me-3"></i>Innovation and Creativity</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Collaborative Environment</p>
+                                <p><i class="fa fa-check text-primary me-3"></i>Holistic Learning Experience</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pricing-list">
-              <ul class="list">
-                <li>Increase traffic 130%</li>
-                <li>Back link analysis</li>
-                <li>Organic traffic 215%</li>
-                <li>10 free Optimization</li>
-                <li>24/7 Support</li>
-              </ul>
-            </div>
-            <div class="pricing-btn">
-              <a href="" class="main-btn main-btn-2">Purchase Now</a>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-7 col-sm-9">
-          <div class="single-pricing text-center wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.4s">
-            <div class="pricing-title">
-              <h4 class="title">Standard</h4>
-            </div>
-            <div class="pricing-price">
-              <span class="pricing">$ 99</span>
-              <p class="text">Month</p>
-            </div>
-            <div class="pricing-list">
-              <ul class="list">
-                <li>Increase traffic 130%</li>
-                <li>Back link analysis</li>
-                <li>Organic traffic 215%</li>
-                <li>10 free Optimization</li>
-                <li>24/7 Support</li>
-              </ul>
-            </div>
-            <div class="pricing-btn">
-              <a href="" class="main-btn main-btn-2">Purchase Now</a>
-            </div>
-          </div>
+    </div>
+</div>
+<!-- Paths select End -->
+<!-- Teach with us section Start -->
+    <div class="tech-with-us-container">
+        <div class="teach-img">
+            <img src="assets/images/teach.png" alt="Come Teach With Us" / id="teachers">
         </div>
-        <div class="col-lg-4 col-md-7 col-sm-9">
-          <div class="single-pricing text-center wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
-            <div class="pricing-title">
-              <h4 class="title">Professional</h4>
-            </div>
-            <div class="pricing-price">
-              <span class="pricing">$ 199</span>
-              <p class="text">Month</p>
-            </div>
-            <div class="pricing-list">
-              <ul class="list">
-                <li>Increase traffic 130%</li>
-                <li>Back link analysis</li>
-                <li>Organic traffic 215%</li>
-                <li>10 free Optimization</li>
-                <li>24/7 Support</li>
-              </ul>
-            </div>
-            <div class="pricing-btn">
-              <a href="" class="main-btn main-btn-2">Purchase Now</a>
-            </div>
-          </div>
+        <div class="teach-desc">
+            <h2>Come teach with us</h2>
+            <p>Experience the joy of ecosysytem !</p>
+        <div class="teach-link">
+            <a href="#" class="teach-btn">Join Now</a>
         </div>
-      </div>
+        </div>
+  </div>
+  <!-- Teach with us section End -->
+   <!-- Features Start -->
+   <div class="container-xxl feature py-5">
+    <div class="container" color="blue">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Why Choosing Us!</p>
+                <h1 class="display-5 mb-4">Why Teach with Edygrad?</h1>
+                <p class="mb-4"><b>Earn Well</b>
+                    A surprisingly high earning potential with predictability and control in your hands!</p>
+                <a class="btn btn-primary py-3 px-5" href="">Join Us Today</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <div class="row g-4">
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="feature-box border rounded p-4">
+                                    <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Find a Prupose</h4>
+                                    <p class="mb-3">Make a difference in someone's life by sharing your knowledge and experiencing the joy of giving!</p>
+                                    <!--a class="fw-semi-bold" href="">Read More <i
+                                            class="fa fa-arrow-right ms-1"></i></a-->
+                                </div>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="feature-box border rounded p-4">
+                                    <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Wonderful Connections</h4>
+                                    <p class="mb-3">
+                                        Connect with students from all over the country and share heartwarming learning experiences!</p>
+                                    <!--a class="fw-semi-bold" href="">Read More <i
+                                            class="fa fa-arrow-right ms-1"></i></a-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                        <div class="feature-box border rounded p-4">
+                            <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                            <h4 class="mb-3">Career Growth</h4>
+                            <p class="mb-3">
+                                With us, you will be able to grow professionally in a rewarding manner</p>
+                            <!--a class="fw-semi-bold" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a-->
+                        </div>
+                        <div class="feature-box border rounded p-4">
+                            <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                            <h4 class="mb-3">Anytime Anywhere</h4>
+                            <p class="mb-3">
+                                Whenever and wherever you want, connect with your students.</p>
+                            <a class="fw-semi-bold" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+  <!-- ------- Feature Section End ---------- -->
+<!-- Get Start Section Start -->
+<div class="get-start-container">
+  <h2>Get Started In Five Easy Steps</h2>
+  <div class="get-start-cards">
+    <div class="get-start-card">
+      <h3>1.</h3>
+      <h4>Apply as Teacher</h4>
+      <p>Apply by filling in a simple form.</p>
+    </div>
+    <div class="get-start-card">
+      <h3>2.</h3>
+      <h4>Initial Screening</h4>
+      <p>Our experts will screen the best profiles.</p>
+    </div>
+    <div class="get-start-card">
+      <h3>3.</h3>
+      <h4>Teaching Demo</h4>
+      <p>
+        Pick a topic of your choice and give a teaching demo to our
+        experts.
+      </p>
+    </div>
+    <div class="get-start-card">
+      <h3>4.</h3>
+      <h4>Teacher On-Boarding & Training</h4>
+      <p>
+        Once selected, documentation and profile creation will be done,
+        followed by training and induction webinar.
+      </p>
+    </div>
+    <div class="get-start-card">
+      <h3>5.</h3>
+      <h4>First Online Session</h4>
+      <p>
+        Once you attend the webinar, you will be listed as a teacher and
+        will get your first online session in no time.
+      </p>
     </div>
   </div>
-  <!-- --------------pricing section end ------------ -->
+  <div class="get-start-link">
+    <a href="#" class="get-start-btn">Apply Now</a>
+  </div>
+</div>
+<!-- Get Start Section End -->
+<!-- Business section Start -->
+<div id="#business" class="for-business-container">
+  <div class="business-img">
+    <img src="assets/images/business.png" alt="For Business" />
+  </div>
+  <div class="business-desc">
+    <h2 id="business">EDYGRAD FOR BUSINESS</h2>
+    <p>
+      We understand that each business has unique needs, which is why we
+      customize our services to meet the specific requirements of each
+      client. Our team of experts works closely with businesses to
+      understand their recruitment needs and find the best service for the
+      organization.
+    </p>
+    <div class="business-lists">
+      <div class="our-business-list">
+        <ion-icon name="ellipse-outline" class="circle-icon"></ion-icon>
+        <p>
+          We run smoothly and seamlessly for the customer because their
+          time is precious.
+        </p>
+      </div>
+      <div class="our-business-list">
+        <ion-icon name="ellipse-outline" class="circle-icon"></ion-icon>
+        <p>
+          Weflexible and personable because every company is different.
+        </p>
+      </div>
+      <div class="our-business-list">
+        <ion-icon name="ellipse-outline" class="circle-icon"></ion-icon>
+        <p>We have a simple and transparent model, with no loopholes.</p>
+      </div>
+    </div>
+    <div class="business-link">
+      <a href="#" class="business-btn">Join Now</a>
+    </div>
+  </div>
+</div>
+<!-- Business section End -->
+
+  
+
+
   <!-- ----------- FAQ Section Start --------- -->
   <section class="faq-section pt-120" data-scroll-index="5">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-7">
           <div class="section-title text-center mb-60">
-            <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Frequencty <span> Asked Queries</span></h1>
-            <p class="mb-25 wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Iste voluptates, rem est quas ullam consequatur.</p>
+            <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s" id="aboutus">Frequencty <span> Asked Queries</span></h1>
+            <p class="mb-25 wow fadeInUp" data-wow-delay=".4s">You can always reach out to us for further enquiries..... <span color="red"><i>ask@edygrad.in</i></span></p>
           </div>
         </div>
         <div class="row">
@@ -383,8 +639,7 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, alias corrupti similique fugit
-                    commodi deserunt praesentium nisi expedita voluptatum dolores.
+                    Yes, our dedicated team are always available to answer any of your query, we are closer and at a tip of your mail.
                   </div>
                 </div>
               </div>
@@ -392,14 +647,13 @@
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    How can I select a best items?
+                    How can get selected/ Am i eligible for Placement / what if I have zero experience?
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore veniam ipsam dolore illo
-                    pariatur maiores neque debitis consectetur fugit?
+                    We implement an ecosystem to aid both expertice and low level skill earner a chance for them to land there dream job through us.
                   </div>
                 </div>
               </div>
@@ -407,14 +661,13 @@
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How can I edit my personal information?
+                    How can my College benefit from the Ecosystem, What is in for us, How can our student get placement through this.
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla possimus excepturi quas natus
-                    animi laudantium nihil ea ipsam reprehenderit?
+                    We provide a wide variety of programs, services, and products where students can learn either online or offline. Our goal is to build a Student Ecosystem that covers all aspects of a student's career, right from their academic career to their career choice.
                   </div>
                 </div>
               </div>
@@ -429,35 +682,60 @@
       </div>
   </section>
   <!-- ----------- FAQ Section End --------- -->
-  <!-- ----------- Download Section Start ------- -->
-  <section class="download-area pt-70 pb-40" data-scroll-index="6">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-6 col-md-9">
-          <div class="download-image mt-50 wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.5s">
-            <div class="download-shape-1"></div>
-            <img src="assets/img/download/download-app.png" alt="" class="image-3">
-          </div>
+  <!-- Callback Start -->
+  <div class="container-fluid callback my-5 pt-5">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch
+                        </p>
+                        <h1 class="display-5 mb-5" id="help">Request A Call-Back</h1>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
+                                <label for="mail">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
+                                <label for="mobile">Your Mobile</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                    style="height: 100px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6">
-          <div class="download-content mt-45 wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.5s">
-            <h1 class="title">Download and Start Using!</h1>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eligendi voluptatem quae
-              deserunt laudantium qui nisi? Cum voluptatibus quidem officiis nam placeat unde eaque totam!</p>
-            <ul>
-              <li><a href="" class="app-store">
-                  <img src="assets/img/download/app-store.png" alt="">
-                </a></li>
-              <li><a href="" class="play-store">
-                  <img src="assets/img/download/play-store.png" alt="">
-                </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- ----------- Download Section End ------- -->
+</div>
+<!-- Callback End -->
+ 
   <!-- --------------Footer Section Start ------- -->
   <footer class="footer-area">
     <div class="footer-shape shape-1"></div>
@@ -471,11 +749,13 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="footer-about mt-50">
-              <a href="" class="logo">
-                <img src="assets/img/header/logo/landapp-logo.png" alt="">
-              </a>
-              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat quo obcaecati
-                excepturi, iste nisi.</p>
+              <!--a href="" class="logo">
+                <img src="assets/img/header/logo/Edygrad-logo.png" alt="">
+              </a-->
+              <div class="logo">
+                <a href="#" class="logo-link">EdyGrad</a>
+              </div>
+              <p class="text">We provide a wide variety of programs, services, and products where students can learn either online or offline. Our goal is to build a Student Ecosystem that covers all aspects of a student's career, right from their academic career to their career choice.</p>
               <ul class="social">
                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -491,7 +771,7 @@
                   <h4 class="title">Quick Links</h4>
                 </div>
                 <ul class="link">
-                  <li><a href="">Home</a></li>
+                  <li><a href="#">Home</a></li>
                   <li><a href="">Features</a></li>
                   <li><a href="">About</a></li>
                   <li><a href="">Testimonial</a></li>
@@ -523,7 +803,7 @@
                   <div class="contact-info">
                     <div class="info-content media-body">
                       <p class="text"><i class="fas fa-phone-alt"></i>
-                        +809272561823 </p>
+                        +91 94403 08696 </p>
                     </div>
                   </div>
                 </li>
@@ -531,7 +811,7 @@
                   <div class="contact-info">
                     <div class="info-content media-body">
                       <p class="text"><a href=""><i class="far fa-envelope"></i>
-                          landapp@gmail.com </a></p>
+                        ask@edygrad.in </a></p>
                     </div>
                   </div>
                 </li>
@@ -539,7 +819,7 @@
                   <div class="contact-info">
                     <div class="info-content media-body">
                       <p class="text"><a href=""><i class="fas fa-globe"></i>
-                          www.landapp.com </a></p>
+                          www.Edygrad.com </a></p>
                     </div>
                   </div>
                 </li>
@@ -547,7 +827,7 @@
                   <div class="contact-info">
                     <div class="info-content media-body">
                       <p class="text"><i class="fas fa-map-marker-alt"></i>
-                        123 stree now york city, united states of america 750 </p>
+                        EDYGRAD, NO 3, INNOVATION VALLEY HILL, IT-SEZ, Madhurawada, Visakhapatnam, Andhra Pradesh 530048</p>
                     </div>
                   </div>
                 </li>
@@ -563,7 +843,7 @@
           <div class="lo-lg-12">
             <div class="copyright">
               <div class="copyright-text text-center">
-                <p class="text">Copyright &#169; 2020 <a href="">landapp</a></p>
+                <p class="text">Copyright &#169; 2023 <a href="">Edygrad</a></p>
               </div>
             </div>
           </div>
@@ -574,9 +854,21 @@
   <!-- --------------Footer Section End ------- -->
 
 
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+    class="bi bi-arrow-up"></i></a>
 
 
+  <!-- Web page script -->
+  <script src="assets/js/script.js"></script>
+  <!-- Include ScrollReveal.js -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
+  <!-- Ion icons CDN -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
   <!-- ---- jquery Js ---- -->
   <script src="assets/js/jquery-1.12.4.min.js"></script>
   <!-- -------- venobox js ------ -->

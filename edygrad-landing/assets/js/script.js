@@ -1,3 +1,4 @@
+
 const navMenu = document.getElementById("nav-menu");
 const closeMenu = document.getElementById("close-menu");
 const toggleMenu = document.getElementById("toggle-menu");
